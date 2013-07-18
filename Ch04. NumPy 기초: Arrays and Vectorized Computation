@@ -74,3 +74,79 @@ arr.astype(np.float64)
 -float -> int
 
 
+
+=======================일단 각자 해보기... 
+				정리하는데 시간이 많이 걸립니다=======
+
+<배열과 스칼라 간의 연산>
+그냥 연산자 써서 하면 됨
+
+<기초 인덱싱과 슬라이싱> 
+arr[a:b]
+arr[x][y]
+arr[x, y]
+arr[:x]
+
+<Boolean 인덱싱>
+data[names == 'Bob', 3]
+
+<Fancy 인덱싱>
+arr = np.arange(32).reshape((2,3))
+np.ix_
+
+<치환 배열과 축 교환>
+arr.T
+arr.transpose((1, 0, 2))
+arr.swapaxes(1, 2)
+
+<유니버설한 기능들>
+np.sqrt()
+np.exp()
+np.maximum(x, y)
+np.modf()
+기타 테이블 참조 page 111
+
+<배열을 이용한 데이터 처리>
+np.meshgrid()
+import matplotlib.pyplot as plt #plot 함수 이용 matlab하고 유사..
+plt.imshow()
+plot.title() 등 ?마크를 통해 보기
+
+<배열 연산으로 조건적 논리 표현>
+result = [(x if c else y) for x, y, c in zip(xarr, yarr, cond)]
+np.where
+
+<수학 및 통계 기법>
+np.mean()
+arr.sum()
+기타는 page 116
+
+<불린 배열에 대한 매소드>
+bools.any()
+bools.all()
+<정렬>
+arr.sort()
+
+<유니크 및 기타 집합 논리>
+np.unique()
+page 118 참조
+
+<배열을 통한 파일 입출력>
+np.save()
+np.load()
+np.savez()
+
+<텍스트 파일의 저장과 로드>
+!cat ttt.txt
+np.loadtxt()
+
+<선형대수>
+page 121 참조
+
+<난수 생성>
+page 122에 자세히 설명... 전에도 randn에 대해서는 언급했다.
+
+<예제: random walks>
+한번 돌려보는 것도 좋겠다.
+
+
