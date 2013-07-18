@@ -1,0 +1,20 @@
+<Ipython 기초>
+  Python 개발 환경 -> Ipython과 텍스트 에디터(text editor)
+  왜 IPython인가? 이것은 통합적인 개발 환경을 갖는다.(It's Intergrated Development Environment(IDE))
+                  - 고급의 그래픽 툴을 갖는다.
+                  - 완벽한 편집능력을 갖는다.
+  
+  Ipython -> Python Shell
+          -> Rich GUI Console
+          -> Web-based interactive Notebook format
+          -> 가볍고, 빠르게 병렬적인 컴퓨터 엔진을 갖는다.
+          
+  ex coding> 
+    - Ipython과 Python의 완벽한 연계동작
+    - data = {i : randn() for i in range(7)}
+        data 저장, i = [0: 7]에서 각 각의 i에 대응하는 임의의 수를 저장한다. 
+        randn()을 실제로 사용하는 방법 : 
+          import numpy
+          numpy.random.randn() #임의의 수 출력
+          numpy.random.randn(x, y) #x행 y열의 임의 원소의 배열 생성
+ 
