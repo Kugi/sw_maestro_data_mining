@@ -59,7 +59,7 @@ Type Type Code Description
 float128 f16 or g Extended-precision floating point
 complex64, complex128,  c8, c16, Complex numbers represented by two 32, 64, or 128 floats, respectively
 complex256 c32
-bool ? Boolean type storing True and False values
+bool Boolean type storing True and False values
 object O Python object type
 string_ S Fixed-length string type (1 byte per character). For example, to create
 a string dtype with length 10, use 'S10'.
