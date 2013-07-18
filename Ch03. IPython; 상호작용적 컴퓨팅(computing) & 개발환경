@@ -41,3 +41,38 @@ ex coding>
 - %run 명려와와 함께 혼동하여 사용하면, 이 기능이 의심할 것 없이 당신의 키 타이핑을 확실히 줄어 줄 것이다.(다음 섹션에서 보자)
 
 
+<내성(Introspection) - ?와 ??마크>
+- 변수 뒤나 앞에 ?마크를 사용하면 객체에 대한 일반적인 정보를 보여준다.
+ex coding>
+b = [1, 2, 3]일 때,
+In[] :　b?
+Type: list
+string Form : [1, 2, 3]
+.
+.
+.
+Docstring:
+~~
+~~
+(꼭 한번 쳐보고, 출력 결과와 특히 Docstring을 확인해봐용~)
+
+이것은 객체내성(object introspection)이라고 한다. 
+
+- 만약에 객체가 함수이거나 일시적인 함수(instance method)인 경우, "the docstring"이 정의 되어져인 있는 경우 함께 정보를 보여준다. 다음과 같이 함수를 정의해서 확인해 보자.
+ex coding>
+def add_numbers(a, b):
+  """ 
+	Add two numbers together
+	... 큰따음표 3개로 docstring을 정의한다!!!! ...
+	-----------------------------------
+	"""
+	return a + b
+?를 사용해서 직접 돌려보고 docstring 부분을 확인해 봐라.
+
+- ??마트는 가능하다면 함수의 소스코드를 함께 볼 수 있다. 위에서 정의한 add_numbers(a, b)를 직접 돌려봐라.
+ex coding>
+add_number??
+
+(!!!이것도 매우 자주 쓰이는 사용입니다 특히나 *기능에 대해서 직접 해보세요 page 64)
+- ?의 마지막 사용 영역, 이것은 유사한 표준 UNIX또는 Windows 명령 line에 대한 방식의 IPython namespace를 찾는데 도움을 준다! "wildcard(*)“를 섞은 문자열을 검색하면 이와 동일한 모든 이름들을 보여준다!!!! 
+In[] : np.*load*?
