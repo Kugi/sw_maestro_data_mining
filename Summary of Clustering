@@ -1,0 +1,13 @@
+- K-Means 
+  cluster 수를 지정
+  
+  매우 큰 samples수에 사용, MiniBatch code와 함께 중간 크기의 clusters에 사용
+  (MiniBatch code는 실행시간을 줄여주고, 각 입력 데이터를 부수적인 서브셋들로 각 반복마다
+  랜덤하게 정한다.)
+  
+  일반적으로 많이 사용되며, 정해진 cluster size에 사용된다. 2차원 적이고, 많지 않은 cluster를 갖는다.
+  
+- Affinity propagation
+  damping, 샘플 우선순위를 설정
+  
+  크지 않은 samples수, 
