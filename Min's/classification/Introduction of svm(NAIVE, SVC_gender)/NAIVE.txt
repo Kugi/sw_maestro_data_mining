@@ -1,0 +1,9 @@
+with open('user_gender.txt') as data:
+    for i, each_line in enumerate(data):
+        row.append(each_line.strip().split(' '))
+        y_data.append(row.pop(0))
+
+
+
+
+

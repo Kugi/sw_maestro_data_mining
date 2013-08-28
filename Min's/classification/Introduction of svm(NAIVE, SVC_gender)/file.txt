@@ -1,0 +1,22 @@
+n_Cs = 10
+n_iter = 5
+cv = ShuffleSplit(n_samples, n_iter=n_iter, train_size=500, test_size=500,
+    random_state=0)
+
+train_scores = np.zeros((n_Cs, n_iter))
+test_scores = np.zeros((n_Cs, n_iter))
+Cs = np.logspace(-5, 5, n_Cs)
+
+for i, C in enumerate(Cs):
+    for j, (train, test) in enumerate(cv):
+        clf = SVC(C=C, gamma=1e-3).fit(X[train], y[train])
+        train_scores[i, j] = clf.score(X[train], y[train])
+        test_scores[i, j] = clf.score(X[test], y[test])
+
+for i in range(n_iter):
+    pl.semilogx(Cs, train_scores[:, i], alpha=0.4, lw=2, c='b')
+    pl.semilogx(Cs, test_scores[:, i], alpha=0.4, lw=2, c='g')
+pl.ylabel("score for SVC(C=C, gamma=1e-3)")
+pl.xlabel("C")
+pl.text(1e-3, 0.5, "Underfitting", fontsize=16, ha='center', va='bottom')
+pl.text(1e3, 0.5, "Few Overfitting", fontsize=16, ha='center', va='bottom')

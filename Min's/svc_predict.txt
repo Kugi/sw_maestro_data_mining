@@ -1,0 +1,85 @@
+cd desktop
+
+
+
+#svm 형식의 파일 load
+
+from sklearn.datasets import load_svmlight_file		
+X, y = load_svmlight_file("user_gender.txt")
+n_samples, n_features = X.shape 			#data의 수, 어플의 수 출력
+print(n_samples, n_features)
+
+
+
+#최적의 parameter 찾기
+
+from sklearn.svm import SVC
+from sklearn.grid_search import GridSearchCV
+import numpy as np
+
+#!! X, y의 4, 5만개의 data를 학습하면, 오래걸리니깐 쌤플을 1000개만 학습시킨다.
+n_subsamples = 1000
+X_small_train, y_small_train = X[:n_subsamples], y[:n_subsamples]
+
+#from sklearn.preprocessing import StandardScaler
+#scaler = StandardScaler()
+#X_small_train = scaler.fit_transform(X_small_train)
+
+#help(GridSearchCV)
+from pprint import pprint
+svc_params = {
+    'C': np.logspace(-1, 2, 4),
+    'gamma': np.logspace(-4, 0, 5),
+}
+pprint(svc_params)
+
+gs_svc = GridSearchCV(SVC(), svc_params, cv=3, n_jobs=-1)
+
+%time _ = gs_svc.fit(X_small_train, y_small_train)
+
+gs_svc.best_params_, gs_svc.best_score_
+
+
+
+
+###################################### 1.
+최적의 Parameter를 이용해서 svc생성 clf에 대입
+
+from sklearn.svm import SVC
+clf = SVC(C=100.0, gamma = 1e-4).fit(X_small_train, y_small_train)
+
+np.shape(X_small_train), np.shape(y_small_train)
+
+clf.score(X_small_train, y_small_train)
+
+#svc.predict()함수를 이용해서 X_test의 데이터의 Class를 추출한다.
+print(clf.predict(X_test))
+print(y_test)
+
+
+
+#새로운 data를 load하여 위와 같이 Class를 추측해낸다. 
+#단, features의 수가 같아야하므로 load할 때 주의한다.
+####################################### 2.
+##http://scikit-learn.org/stable/datasets/index.html#the-20-newsgroups-text-dataset
+##7.5 Datasets in svmlight/libsvm form
+
+#X_small_train.shape[1]과 같은 수의 어플(features)를 갖는 X_test를 생성한다. 
+
+X_test, y_test = load_svmlight_file("user_gender 3.txt", n_features=X_small_train.shape[1]) #X_small_train.shape의 [0]번째는 Sample수, 
+				   #	[1]번째는 features수
+#실제 52600과 51500개 정도로 X_small과 X_test의 features수가 맞기 않았으나 조정되었다..
+np.shape(X_small_train), np.shape(y_small_train)
+np.shape(X_test), np.shape(y_test) 
+
+print(clf.predict(X_test))
+print(y_test)				
+print(clf.score(X_test, y_test))	#X_test의 data가 clf에 의한 추측이 맞는지 테스트한다.(확률)
+
+
+
+#결과를 svm형식으로 SAVE한다.
+#from .svmlight_format import dump_svmlight_file
+#from .olivetti_faces import fetch_olietti_faces
+#pickle
+
