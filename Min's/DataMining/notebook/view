@@ -1,0 +1,50 @@
+%pylab
+import pgdb
+from pandas.io.sql as sql
+
+
+df_all = sql.read_frame('select * from \"user\"',db)
+
+
+df_all.save('data/user.df') #localized data
+
+
+df_all = pd.load(' ')
+df_all['porv'] = da_all['prov'].dropna().map(lambda i : i.decode('utf-8')) 
+#utf-8의 i값을 각각 null을 빼고, 유니코드로 바꿔준다.(한글 다룰 때?)
+
+
+
+df_all = df_all[df_all.apply(lambda x : not x['nickname'] in admin_nicknames and (x['is_admin']) 
+     , axis = 1) ] #axis -- colum 1 지정???  apply중요!!!!!!!!!
+
+
+result = pd.value_counts(df[fld][df[fld]!=' '])[:limit]#한계지점 
+#fld = provance  , [df[fld]!=' '] 조건(!=)인 것만 탐색
+
+
+
+plt.savefig(fname,  )#결과 이미지 결과
+Image(~) #ipython에 보여준다. 
+
+
+result.plot(kind = 'barh',~) #그래프 종류
+legend() #설명 주석같은
+
+
+#한글 폰트 저장
+matplotlib.rc('font', ~)
+def 
+pandas.tools.~~ #hack 멘토님이 보내주신다.
+
+
+fname = graph_by_group(fld = 'point_accu', ) #
+
+
+df[df[group_fld]!=' '].groupby(group_fld)[fld].agg(meanfunc).plot[kind='barh',
+                                                                  alpha=0.5,
+                                                                  title='olocker,
+                                                                  '+mfun.func_name+'
+                                                                  by '+group_fld+'
+                                                                  '-'+fld)
+#.agg()우리가 정용한 펑션 적용

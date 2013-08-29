@@ -1,0 +1,134 @@
+cd desktop
+
+
+
+from sklearn.datasets import load_svmlight_file
+X, y = load_svmlight_file("user_gender 2.txt")
+
+
+
+from sklearn.cross_validation import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.25, random_state=0)
+
+
+
+print("train data shape: %r, train target shape: %r"
+      % (X_train.shape, y_train.shape))
+print("test data shape: %r, test target shape: %r"
+      % (X_test.shape, y_test.shape))
+print("data shape: %r, target shape: %r" % (X.shape, y.shape))
+print("classes: %r" % list(np.unique(y)))
+
+
+
+n_samples, n_features = X.shape
+print("n_samples=%d" % n_samples)
+print("n_features=%d" % n_features)
+
+
+
+from sklearn.svm import SVC
+SVC().fit(X, y).score(X, y)
+
+
+
+
+
+
+
+
+
+svc = SVC(kernel='rbf').fit(X_train, y_train)
+train_score = svc.score(X_train, y_train) 
+train_score
+test_score = svc.score(X_test, y_test)
+test_score
+
+
+
+
+
+
+from sklearn.cross_validation import ShuffleSplit
+from sklearn.svm import SVC
+import numpy as np
+import pylab as pl
+
+
+n_Cs = 10
+n_iter = 5
+cv = ShuffleSplit(n_samples, n_iter=n_iter, train_size=200, test_size=200,
+    random_state=0)
+
+train_scores = np.zeros((n_Cs, n_iter))
+test_scores = np.zeros((n_Cs, n_iter))
+Cs = np.logspace(-5, 5, n_Cs)
+
+for i, C in enumerate(Cs):
+    for j, (train, test) in enumerate(cv):
+        clf = SVC(C=C, gamma=1e-4).fit(X[train], y[train])
+        train_scores[i, j] = clf.score(X[train], y[train])
+        test_scores[i, j] = clf.score(X[test], y[test])
+        
+        
+        
+
+
+
+
+for i in range(n_iter):
+    pl.semilogx(Cs, train_scores[:, i], alpha=0.4, lw=2, c='b')
+    pl.semilogx(Cs, test_scores[:, i], alpha=0.4, lw=2, c='g')
+pl.ylabel("score for SVC(C=C, gamma=1e-4)")
+pl.xlabel("C")
+pl.text(1e-3, 0.5, "Underfitting", fontsize=16, ha='center', va='bottom')
+pl.text(1e3, 0.5, "Few Overfitting", fontsize=16, ha='center', va='bottom')
+pl.show()
+
+
+
+
+
+#################################
+
+
+from sklearn.grid_search import GridSearchCV
+#help(GridSearchCV)
+
+
+
+
+
+
+from pprint import pprint
+svc_params = {
+    'C': np.logspace(-1, 2, 4),
+    'gamma': np.logspace(-4, 0, 5),
+}
+pprint(svc_params)
+
+
+
+
+
+
+n_subsamples = 500
+X_small_train, y_small_train = X_train[:n_subsamples], y_train[:n_subsamples]
+
+
+
+
+
+
+gs_svc = GridSearchCV(SVC(), svc_params, cv=3, n_jobs=-1)
+
+%time _ = gs_svc.fit(X_small_train, y_small_train)
+
+
+
+
+gs_svc.best_params_, gs_svc.best_score_
+
+
