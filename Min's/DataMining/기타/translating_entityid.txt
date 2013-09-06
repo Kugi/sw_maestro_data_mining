@@ -1,0 +1,10 @@
+########## pickle 'entityid_featureid' uesed for translating...##########
+#####
+
+temp = []
+for i in X_test[1]:
+   c_i = str(i)
+   if(EF_table.has_key(c_i) == True):
+       temp.append(EF_table[c_i])
+   else:
+       print(i ,False)

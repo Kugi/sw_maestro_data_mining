@@ -39,6 +39,7 @@ SVC().fit(X, y).score(X, y)
 
 
 
+from sklearn.svm import SVC
 
 svc = SVC(kernel='rbf').fit(X_train, y_train)
 train_score = svc.score(X_train, y_train) 
@@ -52,7 +53,6 @@ test_score
 
 
 from sklearn.cross_validation import ShuffleSplit
-from sklearn.svm import SVC
 import numpy as np
 import pylab as pl
 
