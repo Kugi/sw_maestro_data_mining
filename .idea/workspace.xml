@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/3clustering/.ipynb_checkpoints/02 clustering_using_PMI_-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Min/3clustering/.ipynb_checkpoints/02 clustering_using_PMI_-checkpoint.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Min/3clustering/data/Keyword.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb" afterPath="$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sw_maestro_data_mining.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -13,6 +12,7 @@
     <file path="/Preview_Clustering_.ipynb" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378523352383" ignored="false" />
     <file path="/helloworld.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524134638" ignored="false" />
     <file path="/README.md" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378657237165" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378679249043" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
