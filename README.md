@@ -18,9 +18,9 @@ sw_maestro_data_mining
 ### utils
 - 자주쓰는 유용한 명령어( + 모듈화)
 
-### NOTEBOOK & STUDY
+### notebooks
 - 개념정리
 
-### Process
+### process
 - 실제로 프로세스를 하는 부분
 - 성별 분류, 나이 분류, 앱 regression, clustering 등의 파일
