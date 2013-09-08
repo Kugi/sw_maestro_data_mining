@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="finally... change folders" />
+    <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="finally... change folders">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/3clustering/.ipynb_checkpoints/02 clustering_using_PMI_-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Min/3clustering/.ipynb_checkpoints/02 clustering_using_PMI_-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb" afterPath="$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kugi/clustering-using-PMI.ipynb" afterPath="$PROJECT_DIR$/kugi/clustering-using-PMI.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="sw_maestro_data_mining.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378660298875" ignored="false" />
+    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378675521050" ignored="false" />
     <file path="/hello.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524025573" ignored="false" />
     <file path="/Preview_Clustering_.ipynb" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378523352383" ignored="false" />
     <file path="/helloworld.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524134638" ignored="false" />
     <file path="/README.md" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378657237165" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378660749540" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +44,19 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+            <state line="19" column="5" selection-start="479" selection-end="479" vertical-scroll-proportion="-3.8888888">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="clustering-using-PMI.ipynb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kugi/clustering-using-PMI.ipynb">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="17" selection-start="239" selection-end="239" vertical-scroll-proportion="0.5833333">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,14 +87,15 @@
         <option value="$PROJECT_DIR$/Min's/DataMining/hello.py" />
         <option value="$PROJECT_DIR$/helloworld.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/kugi/clustering-using-PMI.ipynb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="22" />
+    <option name="x" value="54" />
+    <option name="y" value="38" />
     <option name="width" value="892" />
-    <option name="height" value="820" />
+    <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -115,7 +123,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -136,6 +143,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -153,15 +161,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="144" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="932" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="934" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="932" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="140" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="136" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -352,24 +360,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="892" height="820" extended-state="0" />
-    <editor active="true" />
+    <frame x="54" y="38" width="892" height="818" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44689655" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44674966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.67" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940899" sideWeight="0.67" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3957399" sideWeight="0.55310345" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3957399" sideWeight="0.6735823" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32763532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3264177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -449,11 +457,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/utils/db_sample.ipynb">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="6" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/db_sample.ipynb">
@@ -461,14 +477,22 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+        <state line="19" column="5" selection-start="479" selection-end="479" vertical-scroll-proportion="-3.8888888">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="239" selection-end="239" vertical-scroll-proportion="0.5833333">
+        <state line="14" column="17" selection-start="239" selection-end="239" vertical-scroll-proportion="0.5833333" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kugi/clustering-using-PMI.ipynb">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
