@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="finally... change folders">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/3clustering/.ipynb_checkpoints/02 clustering_using_PMI_-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Min/3clustering/.ipynb_checkpoints/02 clustering_using_PMI_-checkpoint.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb" afterPath="$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kugi/clustering-using-PMI.ipynb" afterPath="$PROJECT_DIR$/kugi/clustering-using-PMI.ipynb" />
+    <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Min/3clustering/Keyword.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sw_maestro_data_mining.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378675521050" ignored="false" />
+    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378675866257" ignored="false" />
     <file path="/hello.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524025573" ignored="false" />
     <file path="/Preview_Clustering_.ipynb" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378523352383" ignored="false" />
     <file path="/helloworld.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524134638" ignored="false" />
@@ -56,7 +54,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="2" column="7" selection-start="24" selection-end="24" vertical-scroll-proportion="0.071599044">
               <folding />
             </state>
           </provider>
@@ -356,13 +354,18 @@
       <created>1378659292444</created>
       <updated>1378659292444</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="finally... change folders">
+      <created>1378675871648</created>
+      <updated>1378675871648</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="38" width="892" height="818" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44674966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.67" order="3" side_tool="false" content_ui="tabs" />
@@ -377,7 +380,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -492,7 +494,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="7" selection-start="24" selection-end="24" vertical-scroll-proportion="0.071599044">
           <folding />
         </state>
       </provider>
