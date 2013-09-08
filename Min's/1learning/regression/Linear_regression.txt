@@ -1,0 +1,45 @@
+from sklearn.datasets import load_boston
+data = load_boston()
+print data.keys()
+
+print data.data.shape
+print data.target.shape
+
+print data.DESCR			#data에 대한 정보 보기
+
+%pylab inline				#히스토그램으로 보기
+plt.hist(data.target)
+plt.xlabel('price ($1000s)')
+plt.ylabel('count')
+
+
+########################
+#### Linear_regression 생성 
+
+from sklearn.cross_validation import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(data.data, data.target)
+
+from sklearn.linear_model import LinearRegression
+
+clf = LinearRegression()
+
+clf.fit(X_train, y_train)
+
+predicted = clf.predict(X_test)
+expected = y_test
+
+plt.scatter(expected, predicted)
+plt.plot([0, 50], [0, 50], '--k')
+plt.axis('tight')
+plt.xlabel('True price ($1000s)')
+plt.ylabel('Predicted price ($1000s)')
+
+#### 선형적합도 측정
+
+from sklearn.metrics import mean_squared_error
+print mean_squared_error(predicted, expected)
+
+#### regression 정확도(적합도) 측정
+
+print "RMS:", np.sqrt(np.mean((predicted - expected) ** 2))
