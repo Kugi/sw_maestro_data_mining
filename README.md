@@ -7,8 +7,10 @@ sw_maestro_data_mining
 
 ### HanJong's
 - 고한종 연수생이 작업한 코드
+
 ### Min's
 - 정민기 연수생이 작업한 코드
+
 ### kugi_new
 - 박종섭 연수생이 작업한 코드
 
