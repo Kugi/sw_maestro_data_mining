@@ -1,0 +1,39 @@
+1차 목표 : Classification
+		  Regression
+		  Clustering
+
+2차 최종 목표 : 
+
+label이 있는 Data에 대해서 분류(classification) :
+우리 앱을 구매하는 가격을 지불 금액 별로 정확도를 다르게 줘서 판매...
+
+ex) 	사용자의 구매 가격 허용치
+	google플레이 정보 앱 분류 불분명한 점 보완
+	
+	앱 추천 sys(모바일 Tageting 광고) :
+	  한 앱에 대한 사용하는 성별 비율
+	  어플 특징 + 성향 -> 광고주에게 정확한 수치를 제공
+	  어플 사용시간(광고클릭) -> 맥도날드 런치메뉴 광고
+	  - 어플 클릭 횟수, push에 따른 앱 삭제, 유동 조사!!!
+
+regression(경향성 분석) : 
+회귀분석, 가위치법, 뉴턴분
+
+ex) 
+	구매내역 날짜 데이터(커멘트리) -> 지금 당장의 구매능력 예측
+	앱의 수요 곡선 예측(얼마나 앱이 설치 될 지 예측)
+	앱의 설치율(설치 지속 시간) - 앱을 계속 키울지 말지 결정에 활용 by clustering 기반 그 clustering안에서 비교 && 설치 사용자수 적으면 설치율이 높으니깐 적정
+
+
+clustering :
+
+ex)
+	사용시간 대 별 앱 clustering
+	클릭 수준에 따른 Scoring - 광고의 Clustering
+		- 평소 요리 어플 많이 설치 & 요리 광고 클릭 횟수 
+			-> 요리 어플만 추천
+	새로운 앱의 추천 - 인구통계학 정보, 유사성 분석(with 기존 앱),
+		      새로운 앱을 선호하는 사람 추천 'The Chssm'
+	user가 feature가 되서 clustering한다.
+	앱설치정보를 활용한 사용자 clustering한다.
+	나이대별로 앱 clustering한다.

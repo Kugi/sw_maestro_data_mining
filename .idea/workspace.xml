@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="test">
+    <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="finally... change folders">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/sound/440.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/sound/bgm_ivent7.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Min/pickles/my_model.pkl 10000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Min/pickles/profiled_user_gender.pklu" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/03-regression.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/04-clustering.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/Classify_iPython_SVM.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/Classify_python.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/DBWriter.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/GoogleSearch.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/LinearSVC.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/NaverSearch.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/clustering-using-PMI.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/dump_svmlight_file.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Min/3regression/nothing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Min/pickles/profiled_user_gender_ages.pklu" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/profiling-dataframe-to-svm-practice.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/profiling.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HanJong/temp_data_frame_load.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sw_maestro_data_mining.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378658036444" ignored="false" />
+    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378659491561" ignored="false" />
     <file path="/hello.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524025573" ignored="false" />
     <file path="/Preview_Clustering_.ipynb" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378523352383" ignored="false" />
     <file path="/helloworld.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524134638" ignored="false" />
@@ -17,7 +36,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ChangesViewManager" flattened_view="false" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -50,7 +69,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="22" selection-start="274" selection-end="274" vertical-scroll-proportion="0.75">
+            <state line="17" column="9" selection-start="251" selection-end="251" vertical-scroll-proportion="0.7083333">
               <folding />
             </state>
           </provider>
@@ -345,7 +364,11 @@
       <created>1378657989135</created>
       <updated>1378657989135</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="finally... change folders">
+      <created>1378659292444</created>
+      <updated>1378659292444</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -414,7 +437,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="finally... change folders" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -430,6 +453,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="test2" />
     <MESSAGE value="test" />
+    <MESSAGE value="finally... change folders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -464,7 +488,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="274" selection-end="274" vertical-scroll-proportion="0.75">
+        <state line="17" column="9" selection-start="251" selection-end="251" vertical-scroll-proportion="0.7083333">
           <folding />
         </state>
       </provider>
