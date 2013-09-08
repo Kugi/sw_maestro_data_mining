@@ -11,7 +11,7 @@ sw_maestro_data_mining
 ### Min's
 - 정민기 연수생이 작업한 코드
 
-### kugi_new
+### kugi's
 - 박종섭 연수생이 작업한 코드
 
 
