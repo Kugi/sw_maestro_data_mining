@@ -1,1 +1,0 @@
-from galaxy_mags import fetch_sdss_galaxy_mags

@@ -2,43 +2,318 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vagrant.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/classification/Introduction of svm(NAIVE, SVC_gender)/NAIVE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/classification/Introduction of svm(NAIVE, SVC_gender)/NaiveBayes for matrix.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/classification/Introduction of svm(NAIVE, SVC_gender)/SVC_gender.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/classification/Introduction of svm(NAIVE, SVC_gender)/SVC_gender_graph.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/classification/Introduction of svm(NAIVE, SVC_gender)/SVC_gender_score.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/classification/Introduction of svm(NAIVE, SVC_gender)/file.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/classification/predicted_user_apps.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/classification/user_age_predicted_.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/classification/user_app_predicted.df" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/classification/user_gender7_pred" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/clustering/Untitled0.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/clustering/clustering.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/clustering/https-::www.youtube.com:watch?v=hlaMiXCRxB0.webloc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/clustering/new_clustering.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/clustering/predicted_user_apps.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/my_model.pkl 10000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/age_my_model_70.pkl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/regression/Linear_regression.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/svc_file_.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 목표.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/.ipynb_checkpoints/Preview_SVC_-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/.ipynb_checkpoints/predicted_user_apps_-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/.ipynb_checkpoints/user_age_Profiled_-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/.ipynb_checkpoints/user_age_predicted-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/.ipynb_checkpoints/user_gender_Profiled_-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/Preview_SVC_.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/predicted_user_apps_.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/user_age_predicted.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/user_gender7_pred" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/.ipynb_checkpoints/Preview_Clustering_-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/.ipynb_checkpoints/clustering-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/Classification~Clustering52min~.webloc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/Preview_Clustering_.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/what_cluster.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/regression/Linear_regression.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/regression/age_regression_.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/2단계 Profiling/user_age_Profiled_.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/2단계 Profiling/user_gender_Profiled_.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/3단계 regression &amp; clustering/age_regression_.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/3단계 regression &amp; clustering/clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/3단계 regression &amp; clustering/clustering_with_weight.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/GitHub for mac.webloc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/Memo 2013. 07. 29..txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/adme_analysis_temp.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/cluster.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/kernal analysis example.webarchive" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/01 - Model Selection and Assessment.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/02 - Distributed Model Selection and Assessment.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/03 - Text Feature Extraction for Classification and Clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/03-regression.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/04 - Large Scale Text Classification for Sentiment Analysis.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/08.2_unsupervised_clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/3단계/04-clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/3단계/GoogleSearch.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/3단계/Untitled0.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/3단계/Vectorizing.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/3단계/db_sample.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/3단계/document_classify.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/3단계/predicted_user_apps.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/3단계/tutor_svm.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/DBWriter.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/adme_analysis_temp.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/document_classification.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/BackgroundJobs.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Configuring IPython.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Custom Display Logic.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/IPython - beyond plain Python.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Markdown Cells.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Notebook Basics.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Overview of IPython.parallel.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Parallel Example - Remote Iteration.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Parallel Magics.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Parallel face detection (no download).ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Parallel face detection.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Rich Display System.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Running Code.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Running a Secure Public Notebook.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Terminal usage.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Typesetting Math Using MathJax.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/Using DirectView and LoadBalancedView Together.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/allconnections.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/animation.m4v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/darts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/ipcluster-kernels.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/latency.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/latency2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/python-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/throughput1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/throughput2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/wideView.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/figs/wideView400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/flare.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/haarcascade_frontalface_default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/kernel-embedding/kapp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/kernel-embedding/qtapp_ip.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/kernel-embedding/wxapp_ip.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/myscript.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/old/P10 Direct Interface.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/old/P25 Parallel Magics.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/old/P30 LoadBalancing.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/old/P55 Working with MPI.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/old/P99 Summary.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/old/PZ Performance.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/old/Z Callbacks.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/italicstr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/lnum.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/load.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/mycircle.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/nestedloop.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/remote_iter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/remote_iter_hint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/remote_iter_slightly_better.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/soundcloud.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/taylor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/tictoc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/soln/tictocf.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/notebooks/text_analysis.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/starcluster_config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/ipython-in-depth-master/tools/nbmerge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/fetch_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/housekeeping.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/mmap_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/model_selection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/00 - Tutorial Setup .ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/01 - Model Selection and Assessment.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/02 - Distributed Model Selection and Assessment.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/03 - Text Feature Extraction for Classification and Clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/04 - Large Scale Text Classification for Sentiment Analysis.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/Untitled0.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/images/grid_search_cv_splits.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/images/grid_search_parameters.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/images/parallel_text_clf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/images/parallel_text_clf_average.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/images/supervised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/notebooks/images/supervised_scikit_learn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/resources/youtube_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/00 - Tutorial Setup .ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/01 - Model Selection and Assessment.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/02 - Distributed Model Selection and Assessment.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/03 - Text Feature Extraction for Classification and Clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/04 - Large Scale Text Classification for Sentiment Analysis.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/Model Selection for the Nystroem Method.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/images/grid_search_cv_splits.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/images/grid_search_parameters.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/images/parallel_text_clf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/images/parallel_text_clf_average.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/images/supervised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/parallel_ml_tutorial-master/solutions/images/supervised_scikit_learn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/download_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/00_Preliminaries.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/01_introduction.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/02_sklearn_data.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/03_machine_learning_101.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/04_houses_regression.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/05_iris_classification.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/06_iris_dimensionality.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/07_iris_clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/08_linearly_separable.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/09_validation_and_testing.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/10_digits_classification.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/11_photoz_regression.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/datasets/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/datasets/galaxy_mags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/figures/ML_flow_chart.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/figures/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/figures/bias_variance.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/figures/linear_regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/figures/sdss_filters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/figures/sgd_separator.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/figures/svm_gui_frames.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/files/iris_setosa.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/files/iris_versicolor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/files/iris_virginica.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/generate_v2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/soln/boston_decision_tree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/soln/iris_kmeans.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/soln/iris_rpca.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/notebooks/soln/show_faces.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_pycon2013-master/scripts/svm_gui.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/fetch_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/ipynbhelper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/01.1_setup_and_introduction.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/01.2_sklearn_overview.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/02.1_representation_of_data.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/02.2_feature_extraction.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/03_basic_principles_of_machine_learning.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/04.1_supervised_classification.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/04.2_supervised_regression.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/04.3_measuring_prediction_performance.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/05.1_application_to_face_recognition.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/05.2_application_to_text_mining.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/06.1_validation_and_testing.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/06.2_validation_exercise.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/07.1_in_depth_with_SVMs.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/07.2_in_depth_trees_and_forests.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/07.3_In_depth_with_linear_models.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/08.1_unsupervised_dimreduction.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/08.2_unsupervised_clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/09_pipelining_estimators.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/10_distributed_model_selection_and_assessment.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/11_large_scale_text_classification.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/ML_flow_chart.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/bias_variance.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/grid_search_cv_splits.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/grid_search_parameters.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/iris_setosa.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/iris_versicolor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/iris_virginica.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/linear_regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/sdss_filters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/sgd_separator.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/supervised_scikit_learn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/figures/svm_gui_frames.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/images/parallel_text_clf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/images/parallel_text_clf_average.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/solutions/02A_faces_plot.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/solutions/04B_houses_regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/solutions/04C_validation_exercise.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/solutions/05B_strip_headers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/solutions/06B_basic_grid_search.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/solutions/06B_learning_curves.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/solutions/07B_grid_search.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/solutions/08A_digits_projection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/notebooks/solutions/08B_digits_clustering.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/01.1_setup_and_introduction.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/01.2_sklearn_overview.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/02.1_representation_of_data.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/02.2_feature_extraction.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/03_basic_principles_of_machine_learning.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/04.1_supervised_classification.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/04.2_supervised_regression.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/04.3_measuring_prediction_performance.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/05.1_application_to_face_recognition.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/05.2_application_to_text_mining.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/06.1_validation_and_testing.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/06.2_validation_exercise.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/07.1_in_depth_with_SVMs.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/07.2_in_depth_trees_and_forests.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/07.3_In_depth_with_linear_models.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/08.1_unsupervised_dimreduction.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/08.2_unsupervised_clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/09_pipelining_estimators.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/10_distributed_model_selection_and_assessment.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/rendered_notebooks/11_large_scale_text_classification.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/sklearn_scipy2013-master/svm_gui.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/notebook/view" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/pickles/age_my_model_70.pklu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/pickles/my_model.pkl 10000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/pickles/profiled_user_gender.pklu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/pickles/profiled_user_gender_ages.pklu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/scikit-learn algorithm cheat-sheet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/svc_predict.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/결과보고서 1차/Profiling-age/age_learn_rbf.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/결과보고서 1차/Profiling-age/age_profiling.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/결과보고서 1차/Profiling-gender/gender_profiling.pdf" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/기타/save_and_load.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/기타/svc_parameters.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Min's/DataMining/기타/translating_entityid.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min's/DataMining/pickles/profiled_user_gender.pkl" afterPath="$PROJECT_DIR$/Min's/DataMining/pickles/profiled_user_gender.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/Preview_Clustering_.ipynb" afterPath="$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/Preview_Clustering_.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min's/DataMining/hello.py" afterPath="$PROJECT_DIR$/Min's/DataMining/hello.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min's/DataMining/pickles/profiled_user_gender_ages.pkl" afterPath="$PROJECT_DIR$/Min's/DataMining/pickles/profiled_user_gender_ages.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Python_for_Data Analysis_translate/Ch03. IPython; 상호작용적 컴퓨팅(computing) &amp; 개발환경" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Python_for_Data Analysis_translate/Ch04. NumPy 기초" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Python_for_Data Analysis_translate/Ch05. Getting Started with pandas" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Python_for_Data Analysis_translate/Summary of Clustering" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/helloworld.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/5153583.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/Clustering_01.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/Clustering_02.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/DataLoadTest.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/adme_analysis_temp.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/clustering-using-PMI.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/clustering_with_weight.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/db_sample.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/document_classify.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/genProfile.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/import_0.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/load_data_01.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/make_profile_01.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/naive_bayes_1000.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/naive_bayes_all.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/new_practice_01.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/00_An Introduction to scikit-learn - Machine Learning in Python .ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/00_An Introduction to scikit-learn Machine Learning in Python.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/03_iris_dimensionality.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/Untitled0.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/Untitled1.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/Untitled2.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/Untitled3.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/Untitled4.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/aaaa.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/dataset.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/filtered.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/guin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/old_practice/teayeon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/pmi_ratio.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/prac-clustering.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/practice_houses_regression.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/scikit-learn machine learning in Python.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/svm_01.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/svm_02.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/svm_02_linearKernel.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/svm_03_linearkernel2.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/svm_1000.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kugi_new/svm_practice.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample_code/DBSCAN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample_code/K-means" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample_code/Vectorizing.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample_code/adme_analysis_temp.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample_code/집체교육/document_classify.ipynb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sw_maestro_data_mining.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378655498278" ignored="false" />
+    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378656059563" ignored="false" />
     <file path="/hello.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524025573" ignored="false" />
     <file path="/Preview_Clustering_.ipynb" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378523352383" ignored="false" />
     <file path="/helloworld.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524134638" ignored="false" />
-    <file path="/README.md" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378655482053" ignored="false" />
+    <file path="/README.md" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378656033838" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,16 +327,33 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="sw_maestro_data_mining" />
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="db_sample.ipynb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/db_sample.ipynb">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="8" selection-start="188" selection-end="188" vertical-scroll-proportion="-7.2222223">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="11" selection-start="287" selection-end="287" vertical-scroll-proportion="0.61085975">
+            <state line="6" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="0.21028037">
               <folding />
             </state>
           </provider>
@@ -87,17 +379,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/Preview_Clustering_.ipynb" />
-        <option value="$PROJECT_DIR$/Min's/DataMining/hello.py" />
-        <option value="$PROJECT_DIR$/helloworld.py" />
         <option value="$PROJECT_DIR$/Min's/DataMining/기타/save_and_load.txt" />
+        <option value="$PROJECT_DIR$/Min's/DataMining/hello.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/helloworld.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
     <option name="y" value="22" />
-    <option name="width" value="975" />
+    <option name="width" value="892" />
     <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -142,6 +434,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sw_maestro_data_mining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sw_maestro_data_mining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sw_maestro_data_mining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Min's" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,23 +613,35 @@
       <created>1378655504795</created>
       <updated>1378655504795</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test">
+      <created>1378655792111</created>
+      <updated>1378655792111</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test">
+      <created>1378655876750</created>
+      <updated>1378655876750</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test">
+      <created>1378656056233</created>
+      <updated>1378656056233</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="975" height="820" extended-state="0" />
-    <editor active="true" />
+    <frame x="10" y="22" width="892" height="820" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37997848" sideWeight="0.67142856" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.67" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940899" sideWeight="0.67" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4172577" sideWeight="0.67" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32763532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -397,114 +715,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/hello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/predicted_user_apps_.ipynb">
+    <entry file="file://$PROJECT_DIR$/utils/db_sample.ipynb">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/Preview_SVC_.ipynb">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="31" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/기타/save_and_load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/hello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/clustering.ipynb">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/hello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/1단계 학습/clustering/Preview_Clustering_.ipynb">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="5" selection-start="112" selection-end="112" vertical-scroll-proportion="0.25558314" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/predicted_user_apps_.ipynb">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/1단계 학습/classification/Preview_SVC_.ipynb">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="31" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Min's/DataMining/기타/save_and_load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+        <state line="13" column="8" selection-start="188" selection-end="188" vertical-scroll-proportion="-7.2222223">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="287" selection-end="287" vertical-scroll-proportion="0.61085975">
+        <state line="6" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="0.21028037">
           <folding />
         </state>
       </provider>
