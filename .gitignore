@@ -1,5 +1,29 @@
+build/*
+src/*.pyc
+.idea/*
+tmp_img
+
+*.nib
+*.swp
+*.pyc
+
+.tmp_*
+.svn/*
+.project
+.pydevproject
+.settings
+.settings/*
+
+# Exclude OS X folder attributes
 .DS_Store
-# 데이터들이 너무 크기 때문에 제외. 이런건 다른 경로로 공유해야 하겠죠.
-*.dat
-*.df
-*.pkl
+
+# Exclude user-specific XCode 3 and 4 files
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
