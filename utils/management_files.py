@@ -1,20 +1,18 @@
 #!! location = "/Min/utils/save_and_load.txt"
-
 ##### pickle file load
 import pickle
 #EF_table = pickle.load(file('entityid_featureid.pkl'))
 ##### df(dataframe) file load
 #uapp = pickle.load(file('data/user_app.df'))
 
-
 ##### text file load
-from sklearn.datasets import load_svmlight_file
+from load.datasets import load_svmlight_file
 # X_small_train.shape의 [0]번째는 Sample수, [1]번째는 features수
 #X_train, y_train = load_svmlight_file("user_gender 5.txt", n_features=52600)
 
 
 ##### clf_file load(model)
-from sklearn.externals import joblib
+from load.externals import joblib
 #filename = "my_model10000.pkl"
 #clf = joblib.load(filename)
 
@@ -37,7 +35,7 @@ def load(fname):
 
 
 ##### data, df file save
-from sklearn.datasets import dump_svmlight_file
+from load.datasets import dump_svmlight_file
 #f_name = "result.dat"
 #dump_svmlight_file(X_test, clf.predict(X_test), f_name);
 

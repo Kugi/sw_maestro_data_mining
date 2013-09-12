@@ -2,24 +2,21 @@ from sklearn.datasets import load_svmlight_file
 X, y = load_svmlight_file("user_gender.txt")
 
 
-
-
-n_samples, n_features = X.shape
 from sklearn.cross_validation import train_test_split
-
 
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.25, random_state=0)
 
 
+%pylab inline
 
 from sklearn.cross_validation import ShuffleSplit
 from sklearn.svm import SVC
 import numpy as np
 import pylab as pl
 
-
+n_samples, n_features = X.shape
 n_Cs = 10
 n_iter = 5
 cv = ShuffleSplit(n_samples, n_iter=n_iter, train_size=500, test_size=500,
