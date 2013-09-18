@@ -2,29 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/process/predict_gender_rbf.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/svc_params_graph.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02 clustering_using_PMI_.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Min/1learning/classification/predicted_user_apps_.ipynb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb" afterPath="$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/utils/svm(NAIVE, SVC_gen_view)/SVC_params_gender_graph.txt" afterPath="$PROJECT_DIR$/Min/utils/svm(NAIVE, SVC_gen_view)/SVC_params_gender_graph.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/management_files.py" afterPath="$PROJECT_DIR$/utils/management_files.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sw_maestro_data_mining.iml" afterPath="$PROJECT_DIR$/.idea/sw_maestro_data_mining.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/process/profile_gender.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/notebook/adme_analysis_temp.ipynb" afterPath="$PROJECT_DIR$/Min/notebook/adme_analysis_temp.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/2Profiling/.ipynb_checkpoints/funny_fun-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Min/2Profiling/.ipynb_checkpoints/funny_fun-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/2Profiling/funny_fun.ipynb" afterPath="$PROJECT_DIR$/Min/2Profiling/funny_fun.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/login_crawling.py" afterPath="$PROJECT_DIR$/utils/login_crawling.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/process/predict_gender_rbf.py" afterPath="$PROJECT_DIR$/process/predict_gender_rbf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/2Profiling/user_age_Profiled_.ipynb" afterPath="$PROJECT_DIR$/Min/2Profiling/user_age_Profiled_.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/1learning/classification/.ipynb_checkpoints/user_age_predicted-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Min/1learning/classification/.ipynb_checkpoints/user_age_predicted-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/1learning/classification/user_age_predicted.ipynb" afterPath="$PROJECT_DIR$/Min/1learning/classification/user_age_predicted.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/2Profiling/.ipynb_checkpoints/user_gender_Profiled_-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Min/2Profiling/.ipynb_checkpoints/user_gender_Profiled_-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/2Profiling/user_gender_Profiled_.ipynb" afterPath="$PROJECT_DIR$/Min/2Profiling/user_gender_Profiled_.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sw_maestro_data_mining.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378796488880" ignored="false" />
+    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379130675885" ignored="false" />
     <file path="/hello.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524025573" ignored="false" />
     <file path="/Preview_Clustering_.ipynb" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378523352383" ignored="false" />
     <file path="/helloworld.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524134638" ignored="false" />
     <file path="/README.md" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378657237165" ignored="false" />
     <file path="/management_files.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378875274657" ignored="false" />
-    <file path="/predict_gender_rbf.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378876552461" ignored="false" />
+    <file path="/predict_gender_rbf.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379117721954" ignored="false" />
     <file path="/svc_params_graph.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378975834604" ignored="false" />
+    <file path="/profile_gender.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379117406974" ignored="false" />
+    <file path="/login_crawling.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379130884370" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +51,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="predict_gender_rbf.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="predict_gender_rbf.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/process/predict_gender_rbf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.2284264">
+            <state line="9" column="0" selection-start="0" selection-end="148" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#69#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_crawling.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/login_crawling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="10" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#15#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SVC_gender_.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Min/utils/svm(NAIVE, SVC_gen_view)/SVC_gender_.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile_gender.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/process/profile_gender.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.14150943">
               <folding />
             </state>
           </provider>
@@ -79,7 +112,7 @@
       <file leaf-file-name="management_files.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/management_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+            <state line="14" column="19" selection-start="455" selection-end="464" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,16 +145,18 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/kugi/clustering-using-PMI.ipynb" />
         <option value="$PROJECT_DIR$/utils/management_files.py" />
-        <option value="$PROJECT_DIR$/process/predict_gender_rbf.py" />
         <option value="$PROJECT_DIR$/utils/svc_params_graph.py" />
+        <option value="$PROJECT_DIR$/process/profile_gender.py" />
+        <option value="$PROJECT_DIR$/process/predict_gender_rbf.py" />
+        <option value="$PROJECT_DIR$/utils/login_crawling.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="22" />
+    <option name="x" value="53" />
     <option name="y" value="22" />
-    <option name="width" value="707" />
-    <option name="height" value="813" />
+    <option name="width" value="783" />
+    <option name="height" value="828" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -149,7 +184,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -196,87 +230,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sw_maestro_data_mining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sw_maestro_data_mining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Min" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sw_maestro_data_mining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sw_maestro_data_mining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Min" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sw_maestro_data_mining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sw_maestro_data_mining" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Min" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="svm(NAIVE, SVC_gen_view)" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="133" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="135" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="134" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="144" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="934" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="932" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="934" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="140" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="136" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -292,7 +275,7 @@
       <recent name="$PROJECT_DIR$/process" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.predict_gender_rbf">
+  <component name="RunManager" selected="Python.login_crawling">
     <configuration default="false" name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -326,6 +309,25 @@
       <module name="sw_maestro_data_mining" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process/predict_gender_rbf.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="login_crawling" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sw_maestro_data_mining" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/login_crawling.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -414,15 +416,17 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.management_files" />
       <item index="1" class="java.lang.String" itemvalue="Python.hello" />
       <item index="2" class="java.lang.String" itemvalue="Python.predict_gender_rbf" />
+      <item index="3" class="java.lang.String" itemvalue="Python.login_crawling" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.predict_gender_rbf" />
-        <item index="1" class="java.lang.String" itemvalue="Python.hello" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.login_crawling" />
+        <item index="1" class="java.lang.String" itemvalue="Python.predict_gender_rbf" />
+        <item index="2" class="java.lang.String" itemvalue="Python.hello" />
       </list>
     </recent_temporary>
   </component>
@@ -530,23 +534,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="22" y="22" width="707" height="813" extended-state="0" />
+    <frame x="53" y="22" width="783" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44674966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.67" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940899" sideWeight="0.67" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35219237" sideWeight="0.66089463" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28735632" sideWeight="0.6793997" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39972144" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33910534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32548475" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32060027" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32469305" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -619,14 +623,12 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kugi/clustering-using-PMI.ipynb">
+    <entry file="file://$PROJECT_DIR$/utils/db_sample.ipynb">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/db_sample.ipynb">
@@ -634,39 +636,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kugi/clustering-using-PMI.ipynb">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/db_sample.ipynb">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/db_sample.ipynb">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -679,9 +649,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="19" column="5" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -694,16 +662,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/login_crawling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="7" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Min/1learning/classification/.ipynb_checkpoints/Preview_SVC_-checkpoint.ipynb">
@@ -711,28 +670,17 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="98" selection-end="98" vertical-scroll-proportion="-0.5555556">
-          <folding />
-        </state>
+        <state line="8" column="5" selection-start="98" selection-end="98" vertical-scroll-proportion="-0.5555556" />
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1123" column="0" selection-start="46950" selection-end="46950" vertical-scroll-proportion="0.29411766">
-          <folding />
-        </state>
+        <state line="1123" column="0" selection-start="46950" selection-end="46950" vertical-scroll-proportion="0.29411766" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/management_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -744,9 +692,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="12" selection-start="125" selection-end="125" vertical-scroll-proportion="-8.021002">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Min/utils/svm(NAIVE, SVC_gen_view)/SVC_gender_.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/login_crawling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="10" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/management_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="455" selection-end="464" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/process/predict_gender_rbf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.2284264">
+        <state line="9" column="0" selection-start="0" selection-end="148" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#69#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/profile_gender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.14150943">
           <folding />
         </state>
       </provider>
