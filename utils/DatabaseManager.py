@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 
-class DatabaseManager(object):
+class DatabaseManager():
 
     __BaseObj__ = declarative_base()
     __db__ = create_engine('postgresql://soma:maestro@)!#@soma1.buzzni.com/application')
