@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="" />
+    <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/3clustering/Module_.ipynb" afterPath="$PROJECT_DIR$/Min/3clustering/Module_.ipynb" />
+    </list>
     <ignored path="sw_maestro_data_mining.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379778028297" ignored="false" />
+    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379782149830" ignored="false" />
     <file path="/hello.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524025573" ignored="false" />
     <file path="/Preview_Clustering_.ipynb" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378523352383" ignored="false" />
     <file path="/helloworld.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524134638" ignored="false" />
@@ -20,7 +22,7 @@
     <file path="/test_service.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379770811985" ignored="false" />
     <file path="/test_client.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379775018878" ignored="false" />
     <file path="/gender_for_apps.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379777019715" ignored="false" />
-    <file path="/a.dummy" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379769190713" ignored="false" />
+    <file path="/a.dummy" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379782666448" ignored="false" />
     <file path="/Module_.ipynb" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379779318716" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,15 +48,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gender_for_apps.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/process/genderforapps/gender_for_apps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test_client.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/process/genderforapps/test_client.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,18 +60,36 @@
       <file leaf-file-name="LoadManager.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/LoadManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="23" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+            <state line="23" column="11" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseManager.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/DatabaseManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="4" selection-start="474" selection-end="511" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#22#35#0" expanded="true" />
+                <element signature="e#22#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/sklearn/__init__.py">
+      <file leaf-file-name="CrawlingManager.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/CrawlingManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="16" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.33152175">
+            <state line="3" column="11" selection-start="42" selection-end="42" vertical-scroll-proportion="0.14516129">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_crawling.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/login_crawling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="30" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,58 +104,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Module_.ipynb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Min/3clustering/Module_.ipynb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="10" selection-start="60" selection-end="60" vertical-scroll-proportion="-2.7777777">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02 clustering_using_PMI_.ipynb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="14" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.5555556">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01 clustering_with_weight.ipynb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Min/3clustering/01 clustering_with_weight.ipynb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Untitled0.ipynb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Min/3clustering/Untitled0.ipynb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="129" selection-end="129" vertical-scroll-proportion="-5.5555553">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Keyword.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Min/3clustering/Keyword.txt">
+      <file leaf-file-name="SaveManager.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/SaveManager.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchForParams.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/SearchForParams.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="16" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="svc_params_graph.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/svc_params_graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/sklearn/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="37" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/process/profile_gender.py" />
         <option value="$PROJECT_DIR$/process/predict_gender_rbf.py" />
         <option value="$PROJECT_DIR$/utils/login_crawling.py" />
         <option value="$PROJECT_DIR$/utils/SaveManager.py" />
@@ -186,13 +175,14 @@
         <option value="$PROJECT_DIR$/process/genderforapps/test_service.py" />
         <option value="$PROJECT_DIR$/process/genderforapps/gender_for_apps.py" />
         <option value="$PROJECT_DIR$/Min/3clustering/Module_.ipynb" />
+        <option value="$PROJECT_DIR$/utils/DatabaseManager.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="818" />
+    <option name="width" value="759" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -248,7 +238,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
+              <option name="myItemId" value="Min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sw_maestro_data_mining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sw_maestro_data_mining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2Profiling" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -261,14 +269,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="133" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="135" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="134" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="/Library/swig-2.0.11/swig.spec.in" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="144" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="934" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="932" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="934" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="140" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="136" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -298,7 +306,7 @@
       <recent name="$PROJECT_DIR$/process" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.LoadManager">
+  <component name="RunManager" selected="Python.DatabaseManager">
     <configuration default="false" name="LoadManager" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -313,25 +321,6 @@
       <module name="sw_maestro_data_mining" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/LoadManager.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="myfuncs" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/process/xmlrpc_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="sw_maestro_data_mining" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process/xmlrpc_test/myfuncs.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -389,6 +378,25 @@
       <module name="sw_maestro_data_mining" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process/genderforapps/test_service.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DatabaseManager" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sw_maestro_data_mining" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/DatabaseManager.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -480,18 +488,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.management_files" />
       <item index="1" class="java.lang.String" itemvalue="Python.LoadManager" />
-      <item index="2" class="java.lang.String" itemvalue="Python.myfuncs" />
-      <item index="3" class="java.lang.String" itemvalue="Python.gender_for_apps" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test_client" />
-      <item index="5" class="java.lang.String" itemvalue="Python.test_service" />
+      <item index="2" class="java.lang.String" itemvalue="Python.gender_for_apps" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test_client" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test_service" />
+      <item index="5" class="java.lang.String" itemvalue="Python.DatabaseManager" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.LoadManager" />
-        <item index="1" class="java.lang.String" itemvalue="Python.gender_for_apps" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test_client" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_service" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test_client" />
+        <item index="0" class="java.lang.String" itemvalue="Python.DatabaseManager" />
+        <item index="1" class="java.lang.String" itemvalue="Python.LoadManager" />
+        <item index="2" class="java.lang.String" itemvalue="Python.gender_for_apps" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test_client" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test_service" />
       </list>
     </recent_temporary>
   </component>
@@ -623,7 +631,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="818" extended-state="6" />
+    <frame x="0" y="22" width="759" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44476327" sideWeight="0.49887133" order="7" side_tool="false" content_ui="tabs" />
@@ -631,11 +639,11 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7246377" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940899" sideWeight="0.67" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19368723" sideWeight="0.60028654" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22440393" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39972144" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39971346" sideWeight="0.20659971" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39971346" sideWeight="0.7934003" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.7934003" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32424676" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -721,48 +729,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/svc_params_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/login_crawling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/SaveManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/SearchForParams.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/DatabaseManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/process/genderforapps/test_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/process/genderforapps/gender_for_apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
@@ -770,23 +736,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/process/genderforapps/test_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="36" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/management_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="11" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Min/3clustering/Untitled0.ipynb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="129" selection-end="129" vertical-scroll-proportion="-5.5555553">
+        <state line="10" column="16" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -803,7 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Min/3clustering/Module_.ipynb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="60" selection-end="60" vertical-scroll-proportion="-2.7777777">
+        <state line="73" column="7" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -823,7 +775,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Min/3clustering/02 clustering_using_PMI_.ipynb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.5555556">
+        <state line="1" column="14" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -831,18 +783,74 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/sklearn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="37" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/genderforapps/test_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="36" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/login_crawling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="30" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/LoadManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+        <state line="23" column="11" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/management_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="11" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/SearchForParams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/svc_params_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/SaveManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/DatabaseManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="4" selection-start="474" selection-end="511" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#22#35#0" expanded="true" />
+            <element signature="e#22#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/sklearn/__init__.py">
+    <entry file="file://$PROJECT_DIR$/utils/CrawlingManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.33152175">
+        <state line="3" column="11" selection-start="42" selection-end="42" vertical-scroll-proportion="0.14516129">
           <folding />
         </state>
       </provider>
