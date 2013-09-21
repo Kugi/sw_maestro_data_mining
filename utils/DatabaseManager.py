@@ -29,12 +29,12 @@ class DatabaseManager():
 
     class Cache_pmi(__BaseObj__):
         __tablename__ = 'app_keyword_pmi'
-        app_id = Column('app_id', Integer, primary_key=True)
+        app_name = Column('app_name', String(100), primary_key=True)
         keyword = Column('keyword', String(100), primary_key=True)
         pmi = Column('pmi', Float)
         update_date = Column('update_date', Date(),default=datetime.now(), onupdate=datetime.now())
-        def __init__(self,app_id,keyword,pmi):
-            self.app_id=app_id
+        def __init__(self,app_name,keyword,pmi):
+            self.app_name=app_name
             self.keyword=keyword
             self.pmi=pmi
 
@@ -74,23 +74,23 @@ class DatabaseManager():
         s.close_all()
 
     @staticmethod
-    def get_app_keyword_pmi(app_id, keyword):
+    def get_app_keyword_pmi(app_name, keyword):
         s = DatabaseManager.__Session__()
         result = s.query(DatabaseManager.Cache_pmi).\
-            filter(DatabaseManager.Cache_pmi.app_id==app_id).\
+            filter(DatabaseManager.Cache_pmi.app_name==app_name).\
             filter(DatabaseManager.Cache_pmi.keyword==keyword)
         if result.count()>0:
-            return result[0].num
+            return result[0].pmi
         return 0
 
     @staticmethod
-    def set_app_keyword_pmi(app_id, keyword, pmi):
+    def set_app_keyword_pmi(app_name, keyword, pmi):
         s = DatabaseManager.__Session__()
         result = s.query(DatabaseManager.Cache_pmi).\
-            filter(DatabaseManager.Cache_pmi.app_id==app_id).\
+            filter(DatabaseManager.Cache_pmi.app_name==app_name).\
             filter(DatabaseManager.Cache_pmi.keyword==keyword)
         if result.count()>0:
             result[0].pmi = pmi
         else:
-            s.add(DatabaseManager.Cache_pmi(app_id, keyword, pmi))
+            s.add(DatabaseManager.Cache_pmi(app_name, keyword, pmi))
         s.commit()
