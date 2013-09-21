@@ -3,7 +3,6 @@ __author__ = 'jeongmingi'
 #/sw_maestro_data_mining/Min/utils/svm(NAIVE, SVC_gen_view)/SVC_params_gender_graph.txt
 #/sw_maestro_data_mining/Min/utils/view by plot_2D.txt
 
-%pylab inline
 
 import pylab as pl
 def plot_2D(data, target, target_names):
@@ -11,8 +10,7 @@ def plot_2D(data, target, target_names):
     target_ids = range(len(target_names))
     pl.figure()
     for i, c, label in zip(target_ids, colors, target_names):
-        pl.scatter(data[target == i, 0], data[target == i, 1],
-                   c=c,a label=label)
+        pl.scatter(data[target == i, 0], data[target == i, 1], c=c, label=label)
     pl.legend()
 
 from sklearn.cross_validation import ShuffleSplit
