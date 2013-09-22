@@ -1,5 +1,6 @@
+#coding: utf-8
 __author__ = 'kugi'
-
+#정민기
 
 import pickle
 

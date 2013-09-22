@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/LoadManager.py" afterPath="$PROJECT_DIR$/utils/LoadManager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/3clustering/.ipynb_checkpoints/Module_top500rate_clustering-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Min/3clustering/.ipynb_checkpoints/Module_top500rate_clustering-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Min/3clustering/Module_top500rate_clustering.ipynb" afterPath="$PROJECT_DIR$/Min/3clustering/Module_top500rate_clustering.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/process/genderforapps/gender_for_apps.py" afterPath="$PROJECT_DIR$/process/genderforapps/gender_for_apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sw_maestro_data_mining.iml" afterPath="$PROJECT_DIR$/.idea/sw_maestro_data_mining.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sw_maestro_data_mining.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379801111352" ignored="false" />
+    <file path="/Dummy.txt" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379833568931" ignored="false" />
     <file path="/hello.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524025573" ignored="false" />
     <file path="/Preview_Clustering_.ipynb" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378523352383" ignored="false" />
     <file path="/helloworld.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1378524134638" ignored="false" />
@@ -19,11 +23,11 @@
     <file path="/profile_gender.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379117406974" ignored="false" />
     <file path="/login_crawling.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379130884370" ignored="false" />
     <file path="/SaveManager.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379415015585" ignored="false" />
-    <file path="/LoadManager.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379535118135" ignored="false" />
+    <file path="/LoadManager.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379833450273" ignored="false" />
     <file path="/SearchForParams.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379530078693" ignored="false" />
     <file path="/test_service.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379770811985" ignored="false" />
     <file path="/test_client.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379775018878" ignored="false" />
-    <file path="/gender_for_apps.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379777019715" ignored="false" />
+    <file path="/gender_for_apps.py" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379804610830" ignored="false" />
     <file path="/a.dummy" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379782666448" ignored="false" />
     <file path="/Module_.ipynb" changelist="5edc91a0-a574-4cb1-be1d-c61ac71ff90e" time="1379779318716" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,12 +54,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DatabaseManager.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DatabaseManager.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/DatabaseManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="16" selection-start="895" selection-end="895" vertical-scroll-proportion="0.48387095">
+            <state line="29" column="16" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_client.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/genderforapps/test_client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="27" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_service.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/genderforapps/test_service.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="50" selection-start="411" selection-end="473" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoadManager.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/LoadManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="0" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gender_for_apps.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/process/genderforapps/gender_for_apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="14" selection-start="983" selection-end="983" vertical-scroll-proportion="1.0394089">
               <folding>
-                <element signature="e#22#51#0" expanded="true" />
+                <element signature="e#27#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,7 +126,6 @@
         <option value="$PROJECT_DIR$/utils/SaveManager.py" />
         <option value="$PROJECT_DIR$/utils/svc_params_graph.py" />
         <option value="$PROJECT_DIR$/utils/SearchForParams.py" />
-        <option value="$PROJECT_DIR$/utils/LoadManager.py" />
         <option value="$PROJECT_DIR$/process/test_service.py" />
         <option value="$PROJECT_DIR$/process/xmlrpc_test/myfuncs.py" />
         <option value="$PROJECT_DIR$/process/xmlrpc_test/test_service.py" />
@@ -94,16 +133,17 @@
         <option value="$PROJECT_DIR$/process/xmlrpc_test/gender_for_apps.py" />
         <option value="$PROJECT_DIR$/process/genderforapps/test_client.py" />
         <option value="$PROJECT_DIR$/process/genderforapps/test_service.py" />
-        <option value="$PROJECT_DIR$/process/genderforapps/gender_for_apps.py" />
         <option value="$PROJECT_DIR$/Min/3clustering/Module_.ipynb" />
         <option value="$PROJECT_DIR$/utils/DatabaseManager.py" />
+        <option value="$PROJECT_DIR$/process/genderforapps/gender_for_apps.py" />
+        <option value="$PROJECT_DIR$/utils/LoadManager.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1005" />
-    <option name="height" value="810" />
+    <option name="width" value="1255" />
+    <option name="height" value="649" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -131,7 +171,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -160,7 +199,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Min" />
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sw_maestro_data_mining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sw_maestro_data_mining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="process" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sw_maestro_data_mining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sw_maestro_data_mining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="process" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="genderforapps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -177,13 +248,10 @@
               <option name="myItemId" value="Min" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3clustering" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,7 +295,7 @@
       <recent name="$PROJECT_DIR$/process" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DatabaseManager">
+  <component name="RunManager" selected="Python.LoadManager">
     <configuration default="false" name="LoadManager" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -416,11 +484,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.DatabaseManager" />
-        <item index="1" class="java.lang.String" itemvalue="Python.LoadManager" />
+        <item index="0" class="java.lang.String" itemvalue="Python.LoadManager" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test_service" />
         <item index="2" class="java.lang.String" itemvalue="Python.gender_for_apps" />
         <item index="3" class="java.lang.String" itemvalue="Python.test_client" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test_service" />
+        <item index="4" class="java.lang.String" itemvalue="Python.DatabaseManager" />
       </list>
     </recent_temporary>
   </component>
@@ -552,18 +620,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1005" height="810" extended-state="0" />
+    <frame x="0" y="22" width="1255" height="649" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44428572" sideWeight="0.49887133" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855093" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7246377" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940899" sideWeight="0.67" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3232534" sideWeight="0.6780627" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18527709" sideWeight="0.47834274" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39972144" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39971346" sideWeight="0.20659971" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.7934003" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5216572" sideWeight="0.20678246" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5216606" sideWeight="0.79321754" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32193732" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -650,20 +718,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/DatabaseManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#22#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/process/genderforapps/gender_for_apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Min/3clustering/Untitled0.ipynb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="16" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" />
@@ -693,11 +747,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/process/genderforapps/test_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="36" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/login_crawling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="30" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
@@ -708,11 +757,6 @@
     <entry file="file://$PROJECT_DIR$/utils/CrawlingManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="12" selection-start="429" selection-end="429" vertical-scroll-proportion="0.6593407" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/LoadManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="11" selection-start="534" selection-end="534" vertical-scroll-proportion="0.7092199" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/management_files.py">
@@ -742,9 +786,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/DatabaseManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="16" selection-start="895" selection-end="895" vertical-scroll-proportion="0.48387095">
+        <state line="29" column="16" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/genderforapps/test_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="50" selection-start="411" selection-end="473" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/genderforapps/test_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="27" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/LoadManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/genderforapps/gender_for_apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="14" selection-start="983" selection-end="983" vertical-scroll-proportion="1.0394089">
           <folding>
-            <element signature="e#22#51#0" expanded="true" />
+            <element signature="e#27#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
