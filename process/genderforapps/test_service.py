@@ -1,3 +1,4 @@
+#coding:utf8
 __author__ = 'jeongmingi'
 
 from SimpleXMLRPCServer import SimpleXMLRPCServer
@@ -6,12 +7,35 @@ import gender_for_apps
 import numpy
 import pickle
 
+
+import Image, sys,os
+from twisted.web import xmlrpc, server
+from twisted.internet import reactor
+sys.path.append("")
+from time import time
+
+
+
 class RequestHandler(SimpleXMLRPCRequestHandler) :
     rpc_paths = ("/output0",)
+
+def xmlrpc_save(self, data=""):
+        if data == "rest": # old version 과 호환하기위함
+            data = mode
+        if type(data) != str:
+            data = data.data
+
+        _PATH = 'appGender.png'
+        # img file name
+        fname  = "%s" % (_PATH)
+        # save img
+        f = open(fname, "wb")
+        return f
 
 def main() :
     server = SimpleXMLRPCServer(("localhost", 2013), requestHandler=RequestHandler)
     server.register_introspection_functions()
+    server.register_function(xmlrpc_save)
     server.register_instance(gender_for_apps.GenderForApps())
     try :
         print "Listing 2013"
