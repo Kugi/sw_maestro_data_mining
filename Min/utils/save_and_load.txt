@@ -6,8 +6,7 @@ EF_table = pickle.load(file('entityid_featureid.pkl'))
 ##### df(dataframe) file load
 
 uapp = pickle.load(file('data/user_app.df'))
-
-
+d
 ##### text file load
 
 from sklearn.datasets import load_svmlight_file	
@@ -63,8 +62,6 @@ pickle.dump(userngender[:100],fout)
 
 
 ##### data frame save 
-from pandas import DataFrame
-DataFrame.save(userngender[100:200], filename)
 
 
 

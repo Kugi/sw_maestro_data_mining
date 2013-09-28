@@ -1,0 +1,37 @@
+{
+  "name": "strutil",
+  "description": "Text Escaping and Unescaping in JavaScript (UTF-8, UTF-16, UTF-32, dec, hex, and more)",
+  "version": "0.1.0",
+  "author": {
+    "name": "Pieter Raubenheimer",
+    "email": "pieter@wavana.com"
+  },
+  "keywords": [
+    "string",
+    "escape",
+    "unescape",
+    "unicode",
+    "hex",
+    "punycode",
+    "utf-16",
+    "utf-32",
+    "mime",
+    "base64"
+  ],
+  "main": "./lib/strutil.js",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jupiter/node-strutil.git"
+  },
+  "readme": "node-strutil\n============\n\nText Escaping and Unescaping in JavaScript (UTF-8, UTF-16, UTF-32, dec, hex, punycode, mime, base64, and more)\n\nFrom http://0xcc.net/jsescape/ - adapted for use as a CommonJS module.\n\nOriginal Copyright (c) 2007 Satoru Takabayashi <satoru 0xcc.net>\n  \nAdaptation Copyright (c) 2012 Pieter Raubenheimer <pieter@wavana.com>\n  \nAll rights reserved.  This is free software with ABSOLUTELY NO WARRANTY.\nYou can redistribute it and/or modify it under the terms of\nthe GNU General Public License version 2.",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jupiter/node-strutil/issues"
+  },
+  "_id": "strutil@0.1.0",
+  "_from": "strutil@"
+}

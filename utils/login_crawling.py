@@ -1,7 +1,7 @@
 #coding: utf-8
 from selenium import webdriver
 from time import sleep
-driver = webdriver.Firefox()
+driver = webdriver.Chrome()
 def cafe_monitoring(query):
     driver.get('https://nid.naver.com/nidlogin.login')
     elm_email = driver.find_element_by_id("id")

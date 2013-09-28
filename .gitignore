@@ -27,3 +27,7 @@ tmp_img
 *.xcworkspace
 xcuserdata
 
+
+Min/3clustering/.ipynb_checkpoints/Module_top500rate_clustering-checkpoint.ipynb
+
+.gitignore
