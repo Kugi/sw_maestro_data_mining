@@ -6,6 +6,8 @@ tmp_img
 *.nib
 *.swp
 *.pyc
+*.df
+app_info2.df
 
 .tmp_*
 .svn/*
