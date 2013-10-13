@@ -1,8 +1,13 @@
 #coding:utf-8
+
+__author__ = 'jeongmingi'
+
 import json
 import logging
 from wsgiref import simple_server
 import urllib
+import pickle
+import pandas as pd
 
 import falcon
 _AUTHKEY_DICT = {'namsangboy':'UnpvK25V0PY7XDzsDROBiDESQ7UUoUFphf'}
@@ -35,9 +40,8 @@ def check_media_type(req, resp, params):
             'This API only supports the JSON media type.',
             'http://docs.examples.com/api/json')
 
-from buzz_rpc.src.App import App
 import inspect
-class AppResource(App):
+class AppResource():
 
     def __init__(self):
         pass
@@ -100,6 +104,36 @@ class AppResource(App):
         resp.status = falcon.HTTP_200
         resp.body = json.dumps(result)    #result를 dump하면 body로...
 
+    def add(self,a, b):
+        return a+b;
+
+    def get_count_gender(self, app):
+        uapp = pickle.load(file('data/user_app.df'))
+        apps = pickle.load(file('data/app_info2.df'))
+        user_gender = pickle.load(file('data/profiled_gender.pkl'))
+        user_gender['gender'] = (-1) * user_gender['gender'] + 3
+
+        #temp = self.mul(5,2) #self recall has no problem...
+        male = 0.0
+        female = 0.0
+        users = uapp[uapp['entity_id']==app].user_id
+        if(users.count>=3000):
+            users = users[:3000]
+
+        for user in users:
+            gender = user_gender[user_gender['user']==user]['gender']
+            if gender:
+            	if gender == 1:
+                    male += 1
+                elif gender == 2:
+                    female += 1
+                else:
+                    print "ERROR IN 'get_graph_gender()'"
+            else:
+                print 'NAN'
+        return male
+
+
 wsgi_app = api = falcon.API(before=[auth, check_media_type])
 
 db = StorageEngine()
@@ -113,5 +147,6 @@ if __name__ == '__main__':
     # gunicorn 으로 실행할때에는
     # gunicorn -w 7 -k eventlet BuzzREST:app -b 0.0.0.0:9009
 
-    httpd = simple_server.make_server('127.0.0.1', 8000, app)
+    httpd = simple_server.make_server('127.0.0.1', 9016, app)
     httpd.serve_forever()
+
