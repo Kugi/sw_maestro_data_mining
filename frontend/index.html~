@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" ng-app="appcat">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="app/css/app.css">
+    <link rel="stylesheet" href="app/css/bootstrap.css">
+    <script src="app/lib/angular/angular.min.js"></script>
+    <script src="app/js/app.js"></script>
+    <script src="app/js/controllers.js"></script>
+    <script src="app/js/filters.js"></script>
+    <script src="app/js/services.js"></script>
+    <script src="app/lib/angular/angular-resource.js"></script>
+</head>
+<body>
+
+<div ng-view></div>
+
+
+</body>
+</html>
+
+
+
+
+
+<!--
+<!doctype html>
+<html lang="en" ng-app ng-controller="PhoneListCtrl">
+<title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
+<head>
+	<meta charset="utf-8">
+	<title>Google Phone Gallery</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="lib/angular/angular.js"></script>
+	<script src="js/controllers.js"></script>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+			<!--Sidebar content-|->
+			<p>Total number of phones: {{phones.length}}</p>
+			Search: <input ng-model="query">
+			Sort by:
+			<select ng-model="orderProp">
+				<option value="name">Alphabetical (name)</option>
+				<option value="age">Newest (age)</option>
+				<option value="-age">Oldest (-age)</option>
+			</select>
+
+			</div>
+			<div class="span10">
+			<!--Body content-|->
+
+			<ul class="phones">
+				<li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
+					<a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+					<a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+					<p>{{phone.snippet}}</p>
+				</li>
+			</ul>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+-->
+
+<!--
+<html lang="en" ng-app ng-controller="phonecat">
+<title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
+<head>
+	<p>{{hello}}</p>
+	<p>Total number of phones: {{phones.length}}</p>
+	<script src="lib/angular/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+</head>
+<body>
+<!-- 
+	<ul>
+		<li ng-repeat="phone in phones">
+			{{phone.name}}
+			<p>{{phone.snippet}}</p>
+		</li>
+	</ul>
+
+	<table>
+		<tr><th>row number</th></tr>
+		<tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+			<td>{{i+1}} aaaa</td>
+		</tr>
+	</table>
+-|->
+	<div id="status">Current filter: {{query}}</div>
+	Search: <input ng-model="query">
+	Sort by: {{orderProp}} 
+	<select ng-model="orderProp">
+		<option value="name">Alphabetical (name)</option>
+		<option value="age">Newest (age)</option>
+		<option value="-age">Oldest (-age)</option>
+	</select>
+	<p>
+	<div class="span10"
+		<ul class="phones">
+			<li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
+			<a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+			<a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+			<p>{{phone.snippet}}</p>
+			</li>
+		</ul>
+
+		<!--
+		<pre>{{phones | json}}</pre>
+		-|->
+	</div>
+	</p>
+</body>
+</html>
+-->

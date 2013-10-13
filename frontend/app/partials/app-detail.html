@@ -1,0 +1,104 @@
+<title ng-bind-template="SW Maestro::{{app.name}}">SW Maestro</title>
+
+<p><img ng-src="{{mainImageUrl}}" class="app"></p>
+<!--<p><button ng-click="hello(app.name)">Hello {{appiidd}}?</button></p>-->
+<h1>{{app.name}}</h1>
+
+<p>{{app.id}}</p>
+<p>{{test}}</p>
+<p>{{test2.num}}</p>
+<p>{{test3.num}}</p>
+
+<ul class="app-thumbs">
+    <li><img ng-src="{{app.img}}" ng-click="setImage(app.img)"></li>
+    <li ng-repeat="img in app.img_list">
+        <img ng-src="{{img}}" ng-click="setImage(img)">
+    </li>
+</ul>
+<ul>
+
+
+<p>
+
+    bbbbbbbbbbbbbbbbbbbb
+    <fs:donut outer-radius="150"
+              inner-radius="45"
+              duration="50"
+              bind="results.Sex" />
+    aaaaaaaaaaaaaaaaaaaa
+
+    <!--<script>-->
+        <!--angular.module('demo', ['dangle', 'DemoCtrl3']);-->
+    <!--</script>-->
+</p>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">Resize the page or change the numbers to see the d3 re-render!</div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3"><hr></div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3" ng-controller="DemoCtrl">
+        <span>{{title}}</span>
+        <d3-bars data="d3Data" label="name" on-click="d3OnClick(item)"></d3-bars>
+        <br>
+        <!--<br>-->
+        <!--<span>First Item</span>-->
+        <!--<input type="text" ng-model="d3Data[0].score"/>-->
+        <!--<br>-->
+        <!--<span>Second Item</span>-->
+        <!--<input type="text" ng-model="d3Data[1].score"/>-->
+        <!--<br>-->
+        <!--<span>Third Item</span>-->
+        <!--<input type="text" ng-model="d3Data[2].score"/>-->
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3"><hr></div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3" ng-controller="DemoCtrl2">
+        <span>{{title}}</span>
+        <d3-bars data="d3Data" label="title"></d3-bars>
+        <br>
+        <!--<br>-->
+        <!--<span>First Item</span>-->
+        <!--<input type="text" ng-model="d3Data[0].score"/>-->
+        <!--<br>-->
+        <!--<span>Second Item</span>-->
+        <!--<input type="text" ng-model="d3Data[1].score"/>-->
+        <!--<br>-->
+        <!--<span>Third Item</span>-->
+        <!--<input type="text" ng-model="d3Data[2].score"/>-->
+    </div>
+</div>
+</ul>
+
+
+<ul class="specs">
+    <li>
+        <span>Availability and Networks</span>
+        <dl>
+            <dt>Availability</dt>
+            <dd ng-repeat="availability in app.availability">{{availability}}</dd>
+        </dl>
+    </li>
+    <li>
+        <span>Battery</span>
+        <dl>
+            <dt>Type</dt>
+            <dd>{{phone.battery.type}}</dd>
+            <dt>Talk Time</dt>
+            <dd>{{phone.battery.talkTime}}</dd>
+            <dt>Standby time (max)</dt>
+            <dd>{{phone.battery.standbyTime}}</dd>
+        </dl>
+    </li>
+</ul>
+
+
+
+
+
+<pre>{{app | json}}</pre>

@@ -1,0 +1,39 @@
+<title ng-bind-template="SW Maestro::{{query}}">SW Maestro</title>
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+			<!--Sidebar content-->
+
+			<p>Total number of apps: {{apps.length}}</p>
+            <p>
+            Search: <input ng-model="query" class="search-query" ng-change="autocom()">
+			Sort by:
+			<select ng-model="orderProp">
+				<option value="name">이름 순 (name)</option>
+				<option value="score">높은 점수 순 (score)</option>
+				<option value="-score">낮은 점수 순 (-score)</option>	
+			</select>
+            </p>
+		</div>
+		<div class="span10">
+			<ul class="applist">
+			<li ng-repeat="app in apps | filter:query | orderBy:orderProp" class="thumbnail">
+				<p>
+                    <a href="#/apps/{{app.id}}" class="thumb">
+                        <img ng-src="{{app.img}}">
+                    </a>
+                    <a href="#/apps/{{app.id}}">
+                        {{app.name}}
+                    </a>
+                </p>
+                <p>
+                    {{app.name}}
+                </p>
+			</li>
+		</ul>
+		</div>
+  	</div>
+</div>
+
+<pre>{{apps | json}}</pre>

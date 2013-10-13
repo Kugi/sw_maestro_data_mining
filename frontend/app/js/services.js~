@@ -1,0 +1,13 @@
+'use strict';
+
+/* Services */
+
+angular.module('appcatServices', ['ngResource']).
+    factory('App', function($resource){
+        return $resource('http://17.buzzni.com/app', {}, {
+            get_list: {method:'GET', params:{func:'get_list'}, isArray:true},
+			get: {method:'GET', params:{func:'get_info'}, isArray:false},
+			auto_comp: {method:'GET', params:{func:'autocomplete'}, isArray:true}
+	})
+});
+

@@ -1,0 +1,67 @@
+'use strict';
+
+/* Controllers */
+function AppListCtrl($scope, $http, $resource, App) {
+	$scope.orderProp = 'score';
+    $http.defaults.useXDomain = true;
+    //$scope.apps = App.get_list();
+
+	$scope.autocom = function() {
+		$scope.apps = App.auto_comp({name: $scope.query});
+	};
+}
+
+
+
+//id: $routeParams.appId
+function AppDetailCtrl($scope, $routeParams, App) {
+	$scope.appiidd = $routeParams.appId;
+
+    $scope.app = App.get({id: $routeParams.appId}, function(app) {
+        $scope.mainImageUrl = app.img;
+    });
+
+    $scope.setImage = function(imageUrl) {
+        $scope.mainImageUrl = imageUrl;
+    }
+
+	$scope.hello = function(name) {
+		alert('Hello ' + (name || 'world') + '!');
+	}
+}
+AppDetailCtrl.$inject = ['$scope', '$routeParams', 'App'];
+/*
+//id: $routeParams.appId
+function AppDetailCtrl($scope, $routeParams, App2) {
+	$scope.appiidd = $routeParams.appId;
+    $scope.app = App2.get({id: $routeParams.appId}, function(app) {
+        $scope.mainImageUrl = app.img;
+    });
+
+    $scope.setImage = function(imageUrl) {
+        $scope.mainImageUrl = imageUrl;
+    }
+	$scope.hello = function(name) {
+		alert('Hello ' + (name || 'world') + '!');
+	}
+}
+AppDetailCtrl.$inject = ['$scope', '$routeParams', 'App'];
+
+
+
+
+*/
+
+/*
+function PhoneListCtrl($scope) {
+	$scope.phones = [
+		{"name": "Nexus S",
+		 "snippet": "Fast just got faster with Nexus S."},
+		{"name": "Motorola XOOM™ with Wi-Fi",
+		 "snippet": "The Next, Next Generation tablet."},
+		{"name": "MOTOROLA XOOM™",
+		 "snippet": "The Next, Next Generation tablet."}
+	];
+	$scope.hello = "Hello, World!"
+}
+*/
