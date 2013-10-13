@@ -8,6 +8,8 @@ tmp_img
 *.pyc
 *.df
 app_info2.df
+**/app_info2.df
+**/.idea
 
 .tmp_*
 .svn/*
