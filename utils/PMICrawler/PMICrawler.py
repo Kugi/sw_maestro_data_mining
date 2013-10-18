@@ -163,7 +163,7 @@ class PMICrawler(object):
         try:
             #time.sleep(200)
             q ='+'.join(q.split())
-            xpath = """//div[@id='content']/div[@class='blog section _blogBase']/div[@class='section_head']/span[@class='title_num']"""
+            xpath = """//span[@class='title_num']"""
             html = requests.get("http://web.search.naver.com/search.naver?where=webkr&sm=tab_jum&ie=utf8&query="+q).text
             hx = HtmlXPathSelector(text=html)
             items = hx.select(xpath)
@@ -193,9 +193,9 @@ class PMICrawler(object):
                     PMICrawler.waitMinute = 1
                 PMICrawler.waitMinute *= 2
                 if PMICrawler.waitMinute >= 128:
-                    PMICrawler.waitMinute = 1
-                    print "escaped. (fail1)"
-                    return 0
+                    PMICrawler.waitMinute = 120
+                    #print "escaped. (fail1)"
+                    #return 0
 
                 print "sleeping... :  %d" %(PMICrawler.waitMinute*60)
                 time.sleep(PMICrawler.waitMinute*60)
@@ -297,12 +297,12 @@ def load(fname):
 
 
 key = load('/home/hosting/swm/data/Keyword.txt')
-keywords = [""]
-keywords2 = [""]
+keywords = []
+#keywords2 = [""]
 for c in key[0]:
 # keywords.append('+"'+c.replace(" ", "")+'"')
     keywords.append(c.replace(" ", ""))
-    keywords2.append(c.replace(" ", ""))
+    #keywords2.append(c.replace(" ", ""))
 
 
 
@@ -318,7 +318,7 @@ searchWordArray = np.array(res3)
 ii = 0;
 
 
-#PMICrawler.initKeywords(keyword)
+PMICrawler.initKeywords(keyword)
 
 
 for a in searchWordArray:
