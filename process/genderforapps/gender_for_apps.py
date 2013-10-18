@@ -4,10 +4,10 @@ import pickle
 import pandas as pd
 
 
-user_gender = pickle.load(file('data/profiled_gender.pkl'))
 uapp = pickle.load(file('data/user_app.df'))
-user_gender['gender'] = (-1) * user_gender['gender'] + 3
 apps = pickle.load(file('data/app_info2.df'))
+user_gender = pickle.load(file('data/profiled_gender.pkl'))
+user_gender['gender'] = (-1) * user_gender['gender'] + 3
 
 class GenderForApps(object):
     def __init__(self):
