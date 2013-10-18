@@ -3,27 +3,34 @@
 
 __author__ = 'kugi'
 
+from pandas import DataFrame, Series
+import pandas as pd
+import pandas.io.sql as sql
+import pickle
+import numpy as np
+import matplotlib.pyplot as plt
+from IPython.core.display import Image
 import sys
+
 from datetime import datetime
 from sqlalchemy import *
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+
 import re
 import time
-import math
 
-import pandas as pd
-import numpy as np
 import requests
 from scrapy.selector import HtmlXPathSelector
 
+import math
 
 
 # 클래스 중복됨... 모듈이 제대로 만들어질 때 까지는 코드를 가져와서 사용함.
 class DatabaseManager():
 
     __BaseObj__ = declarative_base()
-    __db__ = create_engine('postgresql://soma:maestro@)!#@soma1.buzzni.com/application')
+    __db__ = create_engine('postgresql://soma:maestro@)!#@soma3.buzzni.com/crawling')
     __Session__ = sessionmaker(bind=__db__)
     #__s__ = __Session__()
 
@@ -139,7 +146,7 @@ class DatabaseManager():
 
 class PMICrawler(object):
 
-    waitMinute = 1
+    waitMinute = 0
 
     def __init__(self, appname, keyword, startIndex=None, endIndex=None):
         PMICrawler.waitMinute = 0
@@ -157,7 +164,7 @@ class PMICrawler(object):
             #time.sleep(200)
             q ='+'.join(q.split())
             xpath = """//div[@id='content']/div[@class='blog section _blogBase']/div[@class='section_head']/span[@class='title_num']"""
-            html = requests.get("http://cafeblog.search.naver.com/search.naver?where=post&sm=tab_jum&ie=utf8&query="+q).text
+            html = requests.get("http://web.search.naver.com/search.naver?where=webkr&sm=tab_jum&ie=utf8&query="+q).text
             hx = HtmlXPathSelector(text=html)
             items = hx.select(xpath)
             inputstr = (items.extract()[0].split()[3]+"")
@@ -169,7 +176,7 @@ class PMICrawler(object):
             print e
             if q != '네이버1' and q != '""':
                 PMICrawler.__ifError(q)
-            #print "except 0"
+                #print "except 0"
             return 0
 
 
@@ -208,6 +215,7 @@ class PMICrawler(object):
                         return 0
                     break
             print "escaped."
+
 
 
     @staticmethod
@@ -261,14 +269,14 @@ class PMICrawler(object):
 
 
 
-app2 =  pd.read_pickle('/home/kugi/sw_maestro_data_mining/utils/data/app_info2.df')
+app2 =  pd.read_pickle('/home/hosting/swm/data/app_info2.df')
 app2 = app2[np.isfinite(app2['rate_num_all'])]
 app2_name = app2.loc[:,['name']]
 #print app2.head()
 app2 = app2.sort(['rate_num_all'], ascending=False)
 #print app2[['name', 'rate_num_all']][5:25]
-res = app2.ix[app2['rate_num_all']>=5000]
-res2 = res[153:1000]#res.ix[res['score']>50]
+res = app2.ix[app2['rate_num_all']>=500]
+res2 = res#res.ix[res['score']>40]
 print 'size:'
 print res.shape
 res3 = res2['name']
@@ -281,20 +289,20 @@ def load(fname):
 
     data = []
     for line in f.readlines():
-        data.append(line.replace('\n','').split(' '))
+        data.append(line.replace('\n','').split(','))
 
     f.close()
 
     return data
 
 
-key = load('/home/kugi/sw_maestro_data_mining/utils/data/Keyword.txt')
+key = load('/home/hosting/swm/data/Keyword.txt')
 keywords = [""]
-#keywords2 = [""]
+keywords2 = [""]
 for c in key[0]:
 # keywords.append('+"'+c.replace(" ", "")+'"')
-    keywords.append(c)#.replace(" ", ""))
-    #keywords2.append(c.replace(" ", ""))
+    keywords.append(c.replace(" ", ""))
+    keywords2.append(c.replace(" ", ""))
 
 
 
@@ -321,11 +329,17 @@ for a in searchWordArray:
     ii += 1;
 
     for key in keyword:
-        sys.stdout.write(" [%d: app %s  key %s] " % (ii, a, key))
-        #  searchWordList = ["+".join(a)+key]
 
-        cw = PMICrawler('"'+a+'"', '"'+key+'"')
-        cw.start()
+        ret = DatabaseManager.get_app_keyword_pmi('"'+a+'"', '"'+key+'"')
+
+        #sys.stdout.write(" [%f: app %s  key %s] " % (ret, a, key))
+
+        if ret == 0:
+            sys.stdout.write(" [%d: app %s  key %s] " % (ii, a, key))
+            #  searchWordList = ["+".join(a)+key]
+
+            cw = PMICrawler('"'+a+'"', '"'+key+'"')
+            cw.start()
 
         #    DatabaseManager.set_app_keyword_pmi(a, key, pmi)
         #     sys.stdout.write("pmi=%.2f : (%s), (%s), (%s)\n" % (pmi, a, key, "".join(a)+key))
