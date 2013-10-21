@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+
+            <!--Sidebar content-->
+            ->: {{test}}, {{ggg}}
+
+
+            <!--<fs-area bind="results.facets.date" on-click="filterByDate" />-->
+            <p>
+                Search: <input ng-model="query" class="search-query" ng-change="autocom()">
+                Sort by:
+                <select ng-model="orderProp">
+                    <option value="name">이름 순 (name)</option>
+                    <option value="score">높은 점수 순 (score)</option>
+                    <option value="-score">낮은 점수 순 (-score)</option>
+                </select>
+            </p>
+
+        </div>
+        <div class="span10">
+            <ul class="applist">
+                <li ng-repeat="app in apps | filter:query | orderBy:orderProp" class="thumbnail2">
+                    <a href="#/apps/{{app.id}}" class="thumb"><img ng-src="{{app.img}}"></a>
+                    <a href="#/apps/{{app.id}}">{{app.name}}</a>
+                    <div style="clear:right"></div>
+
+                    <textarea style="min-width: 500px; max-width: 1280px;height: 120px;">
+                    {{app.intro}}
+                    </textarea>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<pre> {{apps | json}} </pre>
