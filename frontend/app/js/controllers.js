@@ -62,7 +62,7 @@ function AppDetailCtrl($scope, $routeParams, App, Test, Test2, Test3) {
 //                count: $scope.test2num
                     }, {
                         term: "Female",
-//                count: $scope.test3num
+//                count: $scope. test3num
                         count: data3.num
                     }]
                 }

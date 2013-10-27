@@ -2,6 +2,9 @@ build/*
 src/*.pyc
 .idea/*
 tmp_img
+.idea
+.idea/workspace.xml
+.idea/misc.xml
 
 *.nib
 *.swp
