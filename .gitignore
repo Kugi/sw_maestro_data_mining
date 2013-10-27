@@ -5,6 +5,7 @@ tmp_img
 .idea
 .idea/workspace.xml
 .idea/misc.xml
+*/.idea/*
 
 *.nib
 *.swp
