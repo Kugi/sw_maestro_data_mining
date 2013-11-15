@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:fs="http://www.w3.org/1999/html">
+<head>
+    <title>Regression & Clustering</title>
+</head>
+<body>
+    Current app id -->!! {{id}}
+    <pre>{{weekday}}</pre>
+    <pre>{{pro}}</pre>
+    <div style="clear:both"></div>
+    <div class="col-lg-6 ng-scope">
+        <fs:donut outer-radius="250"
+                  inner-radius="75"
+                  duration="750"
+                  bind="resultsa.Sex" />
+    </div>
+
+    <div class="col-lg-6 ng-scope" style = "float: right;padding-top: 200px;">
+        <p style="font-size: 40px; font-weight: bold">요일별 앱 설치량</p>
+
+        <fs:date-histo bind="results_histo.facets.Times" on-click="filterSearchB" />
+    </div>
+    <div style="clear:both"></div>
+
+    <div class="col-lg-6 ng-scope">
+        <p style="font-size: 40px; font-weight: bold">날짜별 앱 설치량</p>
+
+        <fs:chart bind="resultss.facets.Times" on-click="filterByDate" />
+    </div>
+    <div class="col-lg-6 ng-scope" style = "float: right;">
+        <p style="font-size: 40px; font-weight: bold">앱 설치량 시계열 그래프</p>
+
+        <fs:chart bind="resultsss.facets.Times" on-click="filterByDate" />
+    </div>
+
+</body>
+</html>

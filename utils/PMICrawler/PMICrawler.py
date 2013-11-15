@@ -8,7 +8,7 @@ import pandas as pd
 import pandas.io.sql as sql
 import pickle
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from IPython.core.display import Image
 import sys
 
@@ -30,7 +30,7 @@ import math
 class DatabaseManager():
 
     __BaseObj__ = declarative_base()
-    __db__ = create_engine('postgresql://soma:maestro@)!#@soma3.buzzni.com/crawling')
+    __db__ = create_engine('postgresql://soma:maestro@)!#@soma3.buzzni.com/application')
     __Session__ = sessionmaker(bind=__db__)
     #__s__ = __Session__()
 
@@ -164,7 +164,7 @@ class PMICrawler(object):
             #time.sleep(200)
             q ='+'.join(q.split())
             xpath = """//span[@class='title_num']"""
-            html = requests.get("http://web.search.naver.com/search.naver?where=webkr&sm=tab_jum&ie=utf8&query="+q).text
+            html = requests.get("http://cafeblog.search.naver.com/search.naver?where=post&sm=tab_jum&ie=utf8&query="+q).text
             hx = HtmlXPathSelector(text=html)
             items = hx.select(xpath)
             inputstr = (items.extract()[0].split()[3]+"")
@@ -172,11 +172,11 @@ class PMICrawler(object):
             #print result
             return result
         except Exception, e:
-            print "search Exception"
+            #print "search Exception"
             print e
             if q != '네이버1' and q != '""':
                 PMICrawler.__ifError(q)
-                #print "except 0"
+            #print "except 0"
             return 0
 
 
@@ -184,16 +184,16 @@ class PMICrawler(object):
     @staticmethod
     def __ifError(word):
         tempRes = PMICrawler.__search('네이버1')
-        print ("tempRes=%d" % tempRes)
+        if tempRes <= 0:
+            print ("tempRes=%d" % tempRes)
 
-        if tempRes == 0:
             print "stuck at ["+ word + "]"
             while True:
                 if PMICrawler.waitMinute <= 0:
                     PMICrawler.waitMinute = 1
                 PMICrawler.waitMinute *= 2
-                if PMICrawler.waitMinute >= 128:
-                    PMICrawler.waitMinute = 120
+                if PMICrawler.waitMinute >= 1440:
+                    PMICrawler.waitMinute = 1440
                     #print "escaped. (fail1)"
                     #return 0
 
@@ -260,23 +260,32 @@ class PMICrawler(object):
 
     def _calcPMI(self, AppScore, KeywordScore, BothScore, nTotalDocs):
 
-        val = (AppScore*KeywordScore/(BothScore*nTotalDocs+1.0))
+		if AppScore <= 0 or KeywordScore <= 0:
+			return 0
+			
+		t = 1000000000.0
+		pa = AppScore/t
+		pb = KeywordScore/t
+		pab = BothScore/t
+			#(AppScore*KeywordScore/(BothScore*nTotalDocs))
+			
+		if pa <= 0 or pb <= 0 or pab <= 0:
+			return 0
+		val = math.log(pab/(pa*pb))
 
-        if val <= 0:
-            return 0.0
 
-        return math.log10(val)
+		return val
 
 
 
-app2 =  pd.read_pickle('/home/hosting/swm/data/app_info2.df')
+app2 =  pd.read_pickle('../data/app_info2.df')
 app2 = app2[np.isfinite(app2['rate_num_all'])]
 app2_name = app2.loc[:,['name']]
 #print app2.head()
-app2 = app2.sort(['rate_num_all'], ascending=False)
+#app2 = app2.sort(['rate_num_all'], ascending=False)
 #print app2[['name', 'rate_num_all']][5:25]
-res = app2.ix[app2['rate_num_all']>=500]
-res2 = res#res.ix[res['score']>40]
+res = app2# app2.ix[app2['rate_num_all']>=5000]
+res2 = res#res.ix[res['score']>50]
 print 'size:'
 print res.shape
 res3 = res2['name']
@@ -296,7 +305,7 @@ def load(fname):
     return data
 
 
-key = load('/home/hosting/swm/data/Keyword.txt')
+key = load('../data/Keyword.txt')
 keywords = []
 #keywords2 = [""]
 for c in key[0]:
@@ -318,7 +327,7 @@ searchWordArray = np.array(res3)
 ii = 0;
 
 
-PMICrawler.initKeywords(keyword)
+#PMICrawler.initKeywords(keyword)
 
 
 for a in searchWordArray:
@@ -330,18 +339,18 @@ for a in searchWordArray:
 
     for key in keyword:
 
-        ret = DatabaseManager.get_app_keyword_pmi('"'+a+'"', '"'+key+'"')
+	ret = DatabaseManager.get_app_keyword_pmi('"'+a+'"', '"'+key+'"')
 
-        #sys.stdout.write(" [%f: app %s  key %s] " % (ret, a, key))
+		#sys.stdout.write(" [%f: app %s  key %s] " % (ret, a, key))
 
-        if ret == 0:
-            sys.stdout.write(" [%d: app %s  key %s] " % (ii, a, key))
-            #  searchWordList = ["+".join(a)+key]
+	if ret == 0:
+		sys.stdout.write(" [%d: app %s  key %s] " % (ii, a, key))
+			#  searchWordList = ["+".join(a)+key]
 
-            cw = PMICrawler('"'+a+'"', '"'+key+'"')
-            cw.start()
+		cw = PMICrawler('"'+a+'"', '"'+key+'"')
+		cw.start()
 
-        #    DatabaseManager.set_app_keyword_pmi(a, key, pmi)
-        #     sys.stdout.write("pmi=%.2f : (%s), (%s), (%s)\n" % (pmi, a, key, "".join(a)+key))
+			#    DatabaseManager.set_app_keyword_pmi(a, key, pmi)
+			#     sys.stdout.write("pmi=%.2f : (%s), (%s), (%s)\n" % (pmi, a, key, "".join(a)+key))
 
 print "done."

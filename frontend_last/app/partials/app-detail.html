@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<div class = "container">
+
+    <h1>{{app.name}}</h1>
+        <div>
+            <imgsdf ng-src="{{mainImageUrl}}" class="app"/>
+        </div>
+        <div>
+            <p><right>우측 썸네일 이미지를 클릭하여 크게 보세요!</right></p>
+            <p><img ng-src="{{mainImageUrl}}" class="app"></p>
+            <ul class="app-thumbs">
+                <li><img ng-src="{{app.img}}" ng-click="setImage(app.img)"></li>
+
+                <li ng-repeat="img in app.img_list">
+                    <img ng-src="{{img}}" ng-click="setImage(img)">
+                </li>
+            </ul>
+        </div>
+
+        <a href="#/apps/{{id}}/detail" class="thumb">
+            <button type="button" class="btn btn-warning" style="
+                width: 177.00300288200378px;
+                height: 59.003002882003784px;
+                margin-top: 50px;
+                margin-left: 10px;
+                margin-right: 30px;
+                margin-bottom: 10px;
+            ">Detail More</button>
+        </a>
+        <a href="#/apps/{{id}}/detail2" class="thumb">
+
+            <button type="button" class="btn btn-warning" style="
+                width: 177.00300288200378px;
+                height: 59.003002882003784px;
+                margin-top: 50px;
+                margin-left: 10px;
+                margin-right: 30px;
+                margin-bottom: 10px;
+            ">Detail More2</button>
+        </a>
+        <div style="clear:both"></div>
+    </div>
+
+
+    <div class = "well text-center">
+        {{app.intro}}
+    </div>
+</div>
+
+
+<div class="col-lg-6">
+    <h2> 장 르 </h2>
+    <p>
+        {{app.genre}} ({{app.cate}})
+    </p>
+
+    <h2> 점 수 (Score) </h2>
+    <p>
+        {{app.score}}
+    </p>
+
+    <h2> 가 격 (Price) </h2>
+    <p>
+        {{app.price}}원
+    </p>
+
+    <h2>남/녀 성별비</h2>
+    <d3-bars on-click="d3OnClick(item)" data="bar1" label="name" style="height: 100"></d3-bars>
+    <!--<div class = "container" style= "float: right;">-->
+</div>
+{{male_}}
+
+<div class="col-lg-6" style="float: right">
+
+    <h2>나이대별 비율</h2>
+    <fs:donut outer-radius="200"
+              inner-radius="75"
+              duration="750"
+              bind="results.Sex" />
+
+</div>
+
+
+<div>
+
+    <p><pre>{{app | json }}</pre></p>
+
+</div>
+
+
+<div style="clear:both"></div>
+
+
+
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>
+
+
+
