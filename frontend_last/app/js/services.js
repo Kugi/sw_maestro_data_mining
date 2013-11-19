@@ -25,7 +25,8 @@ angular.module('appcatServices', ['ngResource']).
 //            process3: {method: 'GET', params:{'func' : 'process3'}, isArray:false},
 
             weekDay_new: {method: 'GET', params:{'func' : 'weekDay_new'}, isArray:true},
-            date_new: {method: 'GET', params:{'func': 'date_new'}, isArray:true}
+            date_new: {method: 'GET', params:{'func': 'date_new'}, isArray:true},
+            date_new2: {method: 'GET', params:{'func': 'date_new2'}, isArray:true}
 
 //            get_cluster_test: {method:'GET', params:{'func': 'get_cluster_test'}, isArray:false}
 

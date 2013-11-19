@@ -716,7 +716,7 @@ function DetailCtrl($scope, $routeParams, App, Min) {
 
 
 
-    var basicMargin = {top: 20, right: 20, bottom: 30, left: 50},
+    var basicMargin = {top: 20, right: 20, bottom: 30, left: 60},
         basicWidth = 960 - basicMargin.left - basicMargin.right,
         basicHeight = 400 - basicMargin.top - basicMargin.bottom;
 
@@ -739,7 +739,7 @@ function DetailCtrl($scope, $routeParams, App, Min) {
 
     var basicLine = d3.svg.line()
         .x(function(d) { return basicX(d.date); })
-        .y(function(d) { return basicY(d.close); });
+        .y(function(d) { return basicY(d.count); });
 
     var basicSvg = d3.select("basicChart").append("svg")
         .attr("width", basicWidth + basicMargin.left + basicMargin.right)
@@ -748,65 +748,23 @@ function DetailCtrl($scope, $routeParams, App, Min) {
         .attr("transform", "translate(" + basicMargin.left + "," + basicMargin.top + ")");
 
 
-    date_new = Min.date_new({id_: $routeParams.appId}, function(data){
+    date_new = Min.date_new2({id_: $routeParams.appId}, function(data){
 
 
 
-        $scope.date_new = data;
+        $scope.date_new_b = data[0].date;
+        $scope.date_new_e = data[(data.length-1)].date;
 
 
         data.forEach( function(d) {
-            d.date = d.date;//parseDate(d.date);
-            d.close = +(0.1 + d.close);
-
-            $scope.parseDate = $scope.parseDate2;
-        });
-
-//        basicX.domain(d3.extent($scope.parseDate2, function(d) { return d.date; }));
-//        basicY.domain(d3.extent($scope.parseDate2, function(d) { return d.close; }));
-//
-//        basicSvg.append("g")
-//            .attr("class", "x axis")
-//            .attr("transform", "translate(0," + basicHeight + ")")
-//            .call(basicXAxis);
-//
-//        basicSvg.append("g")
-//            .attr("class", "y axis")
-//            .call(basicYAxis)
-//            .append("text")
-//            .attr("transform", "rotate(-90)")
-//            .attr("y", 6)
-//            .attr("dy", ".71em")
-//            .style("text-anchor", "end")
-//            .text("count (명)");
-//
-//        basicSvg.append("path")
-//            .datum($scope.parseDate2)
-//            .attr("class", "line")
-//            .attr("d", basicLine);
-    });
-
-
-
-
-//    basic chart
-
-
-
-    d3.tsv("app/data/basicChartDat.tsv", function(error, data) {
-        data.forEach(function(d) {
             d.date = parseDate(d.date);
-            d.close = +d.close;
-
-            //d = {"date":"2007-04-23T15:00:00.000Z","close":93.24}
-//            d.date = "2007-04-23T15:00:00.000Z";
-//            d.close = 93.24;
+            d.count = +d.count;
 
             $scope.parseDate2 = data;
         });
 
-        basicX.domain(d3.extent(data, function(d) { return d.date; }));
-        basicY.domain(d3.extent(data, function(d) { return d.close; }));
+        basicX.domain(d3.extent($scope.parseDate2, function(d) { return d.date; }));
+        basicY.domain(d3.extent($scope.parseDate2, function(d) { return d.count; }));
 
         basicSvg.append("g")
             .attr("class", "x axis")
@@ -821,13 +779,56 @@ function DetailCtrl($scope, $routeParams, App, Min) {
             .attr("y", 6)
             .attr("dy", ".71em")
             .style("text-anchor", "end")
-            .text("설치 수 (대)");
+            .text("count (명)");
 
         basicSvg.append("path")
-            .datum(data)
+            .datum(data)//$scope.parseDate2)
             .attr("class", "line")
             .attr("d", basicLine);
     });
+
+
+
+
+//    basic chart
+
+
+
+//    d3.tsv("app/data/basicChartDat.tsv", function(error, data) {
+//        data.forEach(function(d) {
+//            d.date = d.date;//parseDate(d.date);
+//            d.close = +d.close;
+//
+//            //d = {"date":"2007-04-23T15:00:00.000Z","close":93.24}
+////            d.date = "2007-04-23T15:00:00.000Z";
+////            d.close = 93.24;
+//
+//            $scope.parseDate2 = data;
+//        });
+//
+//        basicX.domain(d3.extent(data, function(d) { return d.date; }));
+//        basicY.domain(d3.extent(data, function(d) { return d.close; }));
+//
+//        basicSvg.append("g")
+//            .attr("class", "x axis")
+//            .attr("transform", "translate(0," + basicHeight + ")")
+//            .call(basicXAxis);
+//
+//        basicSvg.append("g")
+//            .attr("class", "y axis")
+//            .call(basicYAxis)
+//            .append("text")
+//            .attr("transform", "rotate(-90)")
+//            .attr("y", 6)
+//            .attr("dy", ".71em")
+//            .style("text-anchor", "end")
+//            .text("설치 수 (대)");
+//
+//        basicSvg.append("path")
+//            .datum(data)
+//            .attr("class", "line")
+//            .attr("d", basicLine);
+//    });
 
 
 
