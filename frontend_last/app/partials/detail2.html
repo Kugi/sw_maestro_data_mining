@@ -2,6 +2,12 @@
 <html>
 <!-- Use the Source, Luke -->
 <head>
+
+
+
+
+
+
     <title>visualization</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 
@@ -13,13 +19,45 @@
         <h1>visualization</h1>
 
 
-
         <div class="content">
             <div class="container">
+
+
+                <style type="text/css">
+                    circle.node {
+                        cursor: pointer;
+                        stroke: #000;
+                        stroke-width: .5px;
+                    }
+
+                    circle.node.directory {
+                        stroke: #9ecae1;
+                        stroke-width: 2px;
+                    }
+
+                    circle.node.collapsed {
+                        stroke: #555;
+                    }
+
+                    .nodetext {
+                        fill: #252929;
+                        font-weight: bold;
+                        text-shadow: 0 0 0.2em white;
+                    }
+
+                    line.link {
+                        fill: none;
+                        stroke: #9ecae1;
+                        stroke-width: 1.5px;
+                    }
+                </style>
+
+                teeeessssssttttttt: {{testCluster}}
+
+
                 <div id="cluster_visual1_1"></div>
 
                 <h2>Input data format</h2>
-                <p>The <code>jsonData</code> format taken as input to <code>update()</code> is extremely simple. It's a JavaScript object representing a file tree structure. Each node must have a <code>name</code> (the file or directory name), leaf nodes must have a <code>size</code> (the number of lines of code or the file), and directory nodes must have a <code>children</code> property containing an array of nodes. As an example, here is the input for the currently displayed CodeFlower. You can modify it at will and click the update button to see the effect of your changes on the CodeFlower.</p>
                 <form id="jsonInput">
                     <fieldset>
                         <textarea id="jsonData">
@@ -78,6 +116,93 @@
                 <!--</script>-->
             </div>
         </div>
+
+
+
+    <div>
+
+        <style>
+
+            /*@import url(../style.css?aea6f0a);*/
+
+            #chart {
+                margin-left: -40px;
+                height: 506px;
+            }
+
+            .text {
+                font: 10px sans-serif;
+            }
+
+            .dot {
+                stroke: #000;
+            }
+
+            .axis path, .axis line {
+                fill: none;
+                stroke: #000;
+                shape-rendering: crispEdges;
+            }
+
+            .label {
+                fill: #777;
+            }
+
+            .year.label {
+                font: 500 196px "Helvetica Neue";
+                fill: #ddd;
+            }
+
+            .year.label.active {
+                fill: #aaa;
+            }
+
+            .overlay {
+                fill: none;
+                pointer-events: all;
+                cursor: ew-resize;
+            }
+
+        </style>
+
+
+        <h1>The Wealth & Health of Nations</h1>
+
+        <p id="chart"></p>
+
+        test
+        {{flowerDat}}
+    </div>
+
+
+
+    <div>
+        <h1> Scatter </h1>
+
+        <style>
+
+            body {
+                font: 10px sans-serif;
+            }
+
+            .axis path,
+            .axis line {
+                fill: none;
+                stroke: #000;
+                shape-rendering: crispEdges;
+            }
+
+            .dot {
+                stroke: #000;
+            }
+
+        </style>
+
+        <scatter></scatter>
+
+    </div>
+
+
 
 </body>
 </html>

@@ -124,18 +124,18 @@ sub {
     bottom: -0.25em;
 }
 
-img {
-    border: 0;
-}
+/*img {*/
+    /*border: 0;*/
+/*}*/
 
-svg:not(:root) {
-    overflow: hidden;
-    height: 400px;
-}
+/*svg:not(:root) {*/
+    /*overflow: hidden;*/
+    /*height: 400px;*/
+/*}*/
 
-figure {
-    margin: 0;
-}
+/*figure {*/
+    /*margin: 0;*/
+/*}*/
 
 fieldset {
     padding: 0.35em 0.625em 0.75em;
@@ -345,11 +345,11 @@ img {
     vertical-align: middle;
 }
 
-.img-responsive {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
+/*.img-responsive {*/
+    /*display: block;*/
+    /*height: auto;*/
+    /*max-width: 100%;*/
+/*}*/
 
 .img-rounded {
     border-radius: 6px;

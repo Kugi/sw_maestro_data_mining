@@ -4,34 +4,159 @@
     <title>Regression & Clustering</title>
 </head>
 <body>
-    Current app id -->!! {{id}}
-    <pre>{{weekday}}</pre>
-    <pre>{{pro}}</pre>
-    <div style="clear:both"></div>
-    <div class="col-lg-6 ng-scope">
-        <fs:donut outer-radius="250"
-                  inner-radius="75"
-                  duration="750"
-                  bind="resultsa.Sex" />
+    <div>
+        Current app id -->!! {{id}}
+        <!--weekday<pre>{{weekday}}</pre>-->
+        <!--weekday2<pre>{{weekDay_new}}</pre>-->
+
+        <!--pro<pre>{{pro}}</pre>-->
+
+        <!--pro2<pre>{{pro2}}</pre>-->
+        <!--pro3<pre>{{pro3}}</pre>-->
+        <!--<div style="clear:both"></div>-->
+        <!--<div class="col-lg-6 ng-scope">-->
+            <!--<fs:donut outer-radius="250"-->
+                      <!--inner-radius="75"-->
+                      <!--duration="750"-->
+                      <!--bind="resultsa.Sex" />-->
+        <!--</div>-->
     </div>
 
-    <div class="col-lg-6 ng-scope" style = "float: right;padding-top: 200px;">
-        <p style="font-size: 40px; font-weight: bold">요일별 앱 설치량</p>
 
-        <fs:date-histo bind="results_histo.facets.Times" on-click="filterSearchB" />
+
+    <div>
+        <h1>요일별 다운로드 수</h1>
+
+        <style>
+            .fig {
+                font-family:Arial;
+                font-size:10pt;
+                color:darkgray;
+            }
+
+            .title {
+                color:red;
+                font-size:20pt;
+            }
+
+        </style>
+
+        <!--de2:<pre>{{de2}}</pre>-->
+        <!--weekde:<pre>{{weekday_de}}</pre>-->
+        <mybarchart></mybarchart>
+
     </div>
-    <div style="clear:both"></div>
 
-    <div class="col-lg-6 ng-scope">
-        <p style="font-size: 40px; font-weight: bold">날짜별 앱 설치량</p>
+    <div>
 
-        <fs:chart bind="resultss.facets.Times" on-click="filterByDate" />
+        parseDate<pre>{{parseDate}}</pre>
+        parseDate2<pre>{{parseDate2}}</pre>
+        <!--<h2>parseDate:{{parseDate}}</h2>-->
+        <h1>날짜 별 설치 수 변화</h1>
+
+        <style>
+
+            .axis path,
+            .axis line {
+                fill: none;
+                stroke: #000;
+                shape-rendering: crispEdges;
+            }
+
+            .x.axis path {
+                display: none;
+            }
+
+            .line {
+                fill: none;
+                stroke: steelblue;
+                stroke-width: 1.5px;
+            }
+
+        </style>
+
+        <basicChart></basicChart>
+
     </div>
-    <div class="col-lg-6 ng-scope" style = "float: right;">
-        <p style="font-size: 40px; font-weight: bold">앱 설치량 시계열 그래프</p>
 
-        <fs:chart bind="resultsss.facets.Times" on-click="filterByDate" />
-    </div>
 
+
+    <!--<p>-->
+
+        <!--<style>-->
+
+            <!--svg {-->
+                <!--font: 10px sans-serif;-->
+            <!--}-->
+
+            <!--.y.axis path {-->
+                <!--display: none;-->
+            <!--}-->
+
+            <!--.y.axis line {-->
+                <!--stroke: #fff;-->
+                <!--stroke-opacity: .2;-->
+                <!--shape-rendering: crispEdges;-->
+            <!--}-->
+
+            <!--.y.axis .zero line {-->
+                <!--stroke: #000;-->
+                <!--stroke-opacity: 1;-->
+            <!--}-->
+
+            <!--.title {-->
+                <!--font: 300 78px Helvetica Neue;-->
+                <!--fill: #666;-->
+            <!--}-->
+
+            <!--.birthyear,-->
+            <!--.age {-->
+                <!--text-anchor: middle;-->
+            <!--}-->
+
+            <!--.birthyear {-->
+                <!--fill: #fff;-->
+            <!--}-->
+
+            <!--rect {-->
+                <!--fill-opacity: .6;-->
+                <!--fill: #e377c2;-->
+            <!--}-->
+
+            <!--rect:first-child {-->
+                <!--fill: #1f77b4;-->
+            <!--}-->
+
+        <!--</style>-->
+
+        <!--<h1>Population Pyramid</h1>-->
+        <!--<p>방향키의 좌, 우 키를 이용하여 년도를 이동하십시오.</p>-->
+        <!--<svgBody ></svgBody>-->
+
+
+    <!--</p>-->
+
+
+
+
+    <!--<div>-->
+        <!--<div class="col-lg-6 ng-scope" style = "float: right;padding-top: 200px;">-->
+            <!--<p style="font-size: 40px; font-weight: bold">요일별 앱 설치량</p>-->
+
+            <!--<fs:date-histo bind="results_histo.facets.Times" on-click="filterSearchB" />-->
+        <!--</div>-->
+        <!--<div style="clear:both"></div>-->
+
+        <!--<div class="col-lg-6 ng-scope">-->
+            <!--<p style="font-size: 40px; font-weight: bold">날짜별 앱 설치량</p>-->
+
+            <!--<fs:chart bind="resultss.facets.Times" on-click="filterByDate" />-->
+        <!--</div>-->
+        <!--<div class="col-lg-6 ng-scope" style = "float: right;">-->
+            <!--<p style="font-size: 40px; font-weight: bold">앱 설치량 시계열 그래프</p>-->
+
+            <!--<fs:chart bind="resultsss.facets.Times" on-click="filterByDate" />-->
+        <!--</div>-->
+    <!--</div>-->
 </body>
 </html>
