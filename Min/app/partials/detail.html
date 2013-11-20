@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:fs="http://www.w3.org/1999/html">
+<head>
+    <title>Regression & Clustering</title>
+</head>
+<body>
+    Current app id -->!! {{id}}
+    <pre>{{pro}}</pre>
+    <pre>{{pro2}}</pre>
+    <pre>{{pro3}}</pre>
+
+    <pre>{{weekday}}</pre>
+
+    <div style="clear:both"></div>
+    <div class="col-lg-6 ng-scope">
+        <p style="font-size: 40px; font-weight: bold">PMI 유저 클러스터링</p>
+        <fs:donut outer-radius="250"
+                  inner-radius="75"
+                  duration="750"
+                  bind="resultsa.Sex" />
+    </div>
+
+    <div class="col-lg-6 ng-scope" style = "float: right;padding-top: 200px;">
+        <p style="font-size: 40px; font-weight: bold">요일별 앱 설치량</p>
+
+        <fs:date-histo bind="results_histo.facets.Times" on-click="filterSearchB" label=""/>
+    </div>
+
+
+    <div style="clear:both"></div>
+    <div class="col-lg-6 ng-scope">
+        <p style="font-size: 40px; font-weight: bold">날짜별 앱 설치량</p>
+
+        <fs:chart bind="resultss.facets.Times" on-click="filterByDate" label="for date" interval="day"/>
+    </div>
+
+    <div class="col-lg-6 ng-scope" style = "float: right;">
+        <p style="font-size: 40px; font-weight: bold">월별 앱 설치량</p>
+
+        <fs:chart bind="resultsss.facets.Times" on-click="filterByDate" label="for month" interval="month"/>
+    </div>
+
+
+    <div style="clear:both"></div>
+    <div class="col-lg-6 ng-scope" style = "float: left;">
+        <p style="font-size: 40px; font-weight: bold">앱 설치량 시계추 분석</p>
+
+        <fs:chart bind="resultdown.facets.Times" on-click="filterByDate" label="for day" interval="day"/>
+    </div>
+
+</body>
+</html>

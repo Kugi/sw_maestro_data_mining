@@ -18,7 +18,8 @@
         </div>
         <div class="span10">
             <ul class="applist">
-                <li ng-repeat="appA in apps_with_thumb | filter:query | orderBy:orderProp" class="thumbnail2">
+                <li ng-repeat="appA in apps | filter:query | orderBy:orderProp" class="thumbnail2">
+                    <p>{{appA.index}}</p>
                     <a href="#/apps/{{appA.id}}" class="thumb"><img ng-src="{{appA.img}}"></a>
                     <a href="#/apps/{{appA.id}}">{{appA.name}}</a>
                     <div style="clear:right"></div>
@@ -33,3 +34,4 @@
 </div>
 
 <pre> {{apps | json}} </pre>
+<pre> {{apps_with_thumb}} </pre>

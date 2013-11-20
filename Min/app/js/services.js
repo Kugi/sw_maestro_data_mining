@@ -9,7 +9,6 @@ angular.module('appcatServices', ['ngResource']).
             get: {method:'GET', params:{'func': 'get_info'}, isArray:false},
             auto_comp: {method:'GET', params:{'func': 'autocomplete'}, isArray:true}
 
-
   })}).
     factory('Min', function($resource){
         return $resource('http://soma3.buzzni.com:port/app', {port:":83"}, {
@@ -17,24 +16,13 @@ angular.module('appcatServices', ['ngResource']).
             get_count_gender: {method: 'GET', params:{'func' : 'get_count_gender'}, isArray:false},
             get_count_age: {method: 'GET', params:{'func' : 'get_count_age'}, isArray:false},
 
-//            weekDay: {method: 'GET', params:{'func' : 'weekDay'}, isArray:false},
-//            addWeekday: {method: 'GET', params:{'func' : 'addWeekday'}, isArray:false},
-//            date_app: {method: 'GET', params:{'func' : 'date_app'}, isArray:false},
-
+            weekDay: {method: 'GET', params:{'func' : 'weekDay'}, isArray:false},
+            addWeekday: {method: 'GET', params:{'func' : 'addWeekday'}, isArray:false},
+            date_app: {method: 'GET', params:{'func' : 'date_app'}, isArray:false},
             process: {method: 'GET', params:{'func' : 'process'}, isArray:true},
             process2: {method: 'GET', params:{'func' : 'process2'}, isArray:false},
             process3: {method: 'GET', params:{'func' : 'process3'}, isArray:false},
-            wow_cluster: {method: 'GET', params:{'func' : 'wow_cluster'}, isArray:true},
-
-            weekDay_new: {method: 'GET', params:{'func' : 'weekDay_new'}, isArray:true},
-            date_new: {method: 'GET', params:{'func': 'date_new'}, isArray:true},
-            date_new2: {method: 'GET', params:{'func': 'date_new2'}, isArray:true},
-
-            get_label_temp: {method: 'GET', params:{'func': 'get_label_temp'}, isArray:false}
-
-//            get_cluster_test: {method:'GET', params:{'func': 'get_cluster_test'}, isArray:false}
-
+            wow_cluster: {method: 'GET', params:{'func' : 'wow_cluster'}, isArray:true}
         })});
-
 
 

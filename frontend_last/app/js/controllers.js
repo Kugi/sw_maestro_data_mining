@@ -23,37 +23,58 @@ function AppListCtrl($scope,$http,$resource, App, Min) {
 function DetailCtrl2($scope, $routeParams, App, Min) {
 //    alert("zzzDc2");
 
+//    $scope.appId2 = 1527791;
 
-    // CodeFlower
-    var flowerDat;
-    var currentCodeFlower;
-    var createCodeFlower = function(json) {
-        // update the jsonData textarea
-        flowerDat = JSON.stringify(json);
-        document.getElementById('jsonData').value = JSON.stringify(json);
-        // remove previous flower to save memory
-        if (currentCodeFlower) currentCodeFlower.cleanup();
-        // adapt layout size to the total number of elements
-        var total = countElements(json);
-        w = parseInt(Math.sqrt(total) * 300, 10);
-        h = parseInt(Math.sqrt(total) * 300, 10);
-        // create a new CodeFlower
-        currentCodeFlower = new CodeFlower("#cluster_visual1_1", w, h).update(json);
-    };
+    var appName = 'nan';
+    $scope.app = App.get({id: $routeParams.appId}, function(app) {
 
-   // d3.json('app/data/testData.json', createCodeFlower);
-    d3.json('http://soma3.buzzni.com:9016/app?func=get_cluster_test', createCodeFlower);
-   $scope.testCluster = Min.get_cluster_test();
+        $scope.appId = $routeParams.appId;
+        appName = app.name;
+        $scope.appName = appName;
 
-//                    document.getElementById('project').addEventListener('change', function() {
-//                        d3.json(this.value, createCodeFlower);
-//                    });
-    document.getElementById('jsonInput').addEventListener('submit', function(e) {
-        e.preventDefault();
-        document.getElementById('cluster_visual1_1').scrollIntoView();
-        var json = JSON.parse(document.getElementById('jsonData').value);
-        currentCodeFlower.update(json);
+        $scope.label_temp = Min.get_label_temp({id_: $scope.appId}, function(label) {
+
+//        $scope.label_temp = label;
+        });
+
     });
+
+
+
+//    // CodeFlower
+//    var flowerDat;
+//    var currentCodeFlower;
+//    var createCodeFlower = function(json) {
+//        // update the jsonData textarea
+//        flowerDat = JSON.stringify(json);
+//        document.getElementById('jsonData').value = JSON.stringify(json);
+//        // remove previous flower to save memory
+//        if (currentCodeFlower) currentCodeFlower.cleanup();
+//        // adapt layout size to the total number of elements
+//        var total = countElements(json);
+//        w = parseInt(Math.sqrt(total) * 300, 10);
+//        h = parseInt(Math.sqrt(total) * 300, 10);
+//        // create a new CodeFlower
+//        currentCodeFlower = new CodeFlower("#cluster_visual1_1", w, h).update(json);
+//    };
+//
+//   // d3.json('app/data/testData.json', createCodeFlower);
+//    d3.json('http://soma3.buzzni.com:9016/app?func=get_cluster_test', createCodeFlower);
+//   $scope.testCluster = Min.get_cluster_test();
+//
+////                    document.getElementById('project').addEventListener('change', function() {
+////                        d3.json(this.value, createCodeFlower);
+////                    });
+//    document.getElementById('jsonInput').addEventListener('submit', function(e) {
+//        e.preventDefault();
+//        document.getElementById('cluster_visual1_1').scrollIntoView();
+//        var json = JSON.parse(document.getElementById('jsonData').value);
+//        currentCodeFlower.update(json);
+//    });
+
+
+
+
 //    document.getElementById('jsonConverter').addEventListener('submit', function(e) {
 //        e.preventDefault();
 //        var origin = this.children[0].children[0].value;
@@ -83,286 +104,286 @@ function DetailCtrl2($scope, $routeParams, App, Min) {
 
 
     //
-// Various accessors that specify the four dimensions of data to visualize.
-    function x(d) { return d.income; }
-    function y(d) { return d.lifeExpectancy; }
-    function radius(d) { return d.population; }
-    function color(d) { return d.region; }
-    function key(d) { return d.name; }
-
-// Chart dimensions.
-    var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 39.5},
-        width = 960 - margin.right,
-        height = 300;//500 - margin.top - margin.bottom;
-
-// Various scales. These domains make assumptions of data, naturally.
-    var xScale = d3.scale.log().domain([300, 1e5]).range([0, width]),
-        yScale = d3.scale.linear().domain([10, 85]).range([height, 0]),
-        radiusScale = d3.scale.sqrt().domain([0, 5e8]).range([0, 40]),
-        colorScale = d3.scale.category10();
-
-// The x & y axes.
-    var xAxis = d3.svg.axis().orient("bottom").scale(xScale).ticks(12, d3.format(",d")),
-        yAxis = d3.svg.axis().scale(yScale).orient("left");
-
-// Create the SVG container and set the origin.
-    var svg = d3.select("#chart").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-// Add the x-axis.
-    svg.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
-
-// Add the y-axis.
-    svg.append("g")
-        .attr("class", "y axis")
-        .call(yAxis);
-
-// Add an x-axis label.
-    svg.append("text")
-        .attr("class", "x label")
-        .attr("text-anchor", "end")
-        .attr("x", width)
-        .attr("y", height - 6)
-        .text("인플레를 감안한 1인당 소득 (달러)");
-
-// Add a y-axis label.
-    svg.append("text")
-        .attr("class", "y label")
-        .attr("text-anchor", "end")
-        .attr("y", 6)
-        .attr("dy", ".75em")
-        .attr("transform", "rotate(-90)")
-        .text("수명 (년)");
-
-// Add the year label; the value is set on transition.
-    var label = svg.append("text")
-        .attr("class", "year label")
-        .attr("text-anchor", "end")
-        .attr("y", height - 24)
-        .attr("x", width)
-        .text(1800);
-
-// Load the data.
-    d3.json("app/data/nations.json", function(nations) {
-
-        // A bisector since many nation's data is sparsely-defined.
-        var bisect = d3.bisector(function(d) { return d[0]; });
-
-        // Add a dot per nation. Initialize the data at 1800, and set the colors.
-        var dot = svg.append("g")
-            .attr("class", "dots")
-            .selectAll(".dot")
-            .data(interpolateData(1800))
-            .enter().append("circle")
-            .attr("class", "dot")
-            .style("fill", function(d) { return colorScale(color(d)); })
-            .call(position)
-            .sort(order);
-
-        // Add a title.
-        dot.append("title")
-            .text(function(d) { return d.name; });
-
-        // Add an overlay for the year label.
-        var box = label.node().getBBox();
-
-        var overlay = svg.append("rect")
-            .attr("class", "overlay")
-            .attr("x", box.x)
-            .attr("y", box.y)
-            .attr("width", box.width)
-            .attr("height", box.height)
-            .on("mouseover", enableInteraction);
-
-        // Start a transition that interpolates the data based on year.
-        svg.transition()
-            .duration(30000)
-            .ease("linear")
-            .tween("year", tweenYear)
-            .each("end", enableInteraction);
-
-        // Positions the dots based on data.
-        function position(dot) {
-            dot .attr("cx", function(d) { return xScale(x(d)); })
-                .attr("cy", function(d) { return yScale(y(d)); })
-                .attr("r", function(d) { return radiusScale(radius(d)); });
-        }
-
-        // Defines a sort order so that the smallest dots are drawn on top.
-        function order(a, b) {
-            return radius(b) - radius(a);
-        }
-
-        // After the transition finishes, you can mouseover to change the year.
-        function enableInteraction() {
-            var yearScale = d3.scale.linear()
-                .domain([1800, 2009])
-                .range([box.x + 10, box.x + box.width - 10])
-                .clamp(true);
-
-            // Cancel the current transition, if any.
-            svg.transition().duration(0);
-
-            overlay
-                .on("mouseover", mouseover)
-                .on("mouseout", mouseout)
-                .on("mousemove", mousemove)
-                .on("touchmove", mousemove);
-
-            function mouseover() {
-                label.classed("active", true);
-            }
-
-            function mouseout() {
-                label.classed("active", false);
-            }
-
-            function mousemove() {
-                displayYear(yearScale.invert(d3.mouse(this)[0]));
-            }
-        }
-
-        // Tweens the entire chart by first tweening the year, and then the data.
-        // For the interpolated data, the dots and label are redrawn.
-        function tweenYear() {
-            var year = d3.interpolateNumber(1800, 2009);
-            return function(t) { displayYear(year(t)); };
-        }
-
-        // Updates the display to show the specified year.
-        function displayYear(year) {
-            dot.data(interpolateData(year), key).call(position).sort(order);
-            label.text(Math.round(year));
-        }
-
-        // Interpolates the dataset for the given (fractional) year.
-        function interpolateData(year) {
-            return nations.map(function(d) {
-                return {
-                    name: d.name,
-                    region: d.region,
-                    income: interpolateValues(d.income, year),
-                    population: interpolateValues(d.population, year),
-                    lifeExpectancy: interpolateValues(d.lifeExpectancy, year)
-                };
-            });
-        }
-
-        // Finds (and possibly interpolates) the value for the specified year.
-        function interpolateValues(values, year) {
-            var i = bisect.left(values, year, 0, values.length - 1),
-                a = values[i];
-            if (i > 0) {
-                var b = values[i - 1],
-                    t = (year - a[0]) / (b[0] - a[0]);
-                return a[1] * (1 - t) + b[1] * t;
-            }
-            return a[1];
-        }
-    });
-
-
-
-
-
-
-
-
-
-    // Scatter
-
-    var scatterMargin = {top: 20, right: 20, bottom: 30, left: 40},
-        scatterWidth = 960 - scatterMargin.left - scatterMargin.right,
-        scatterHeight = 350 - scatterMargin.top - scatterMargin.bottom;
-
-    var scatterX = d3.scale.linear()
-        .range([0, scatterWidth]);
-
-    var scatterY = d3.scale.linear()
-        .range([scatterHeight, 0]);
-
-    var scatterColor = d3.scale.category10();
-
-    var scatterXAxis = d3.svg.axis()
-        .scale(scatterX)
-        .orient("bottom");
-
-    var scatterYAxis = d3.svg.axis()
-        .scale(scatterY)
-        .orient("left");
-
-    var scatterSvg = d3.select("scatter").append("svg")
-        .attr("width", scatterWidth + scatterMargin.left + scatterMargin.right)
-        .attr("height", scatterHeight + scatterMargin.top + scatterMargin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + scatterMargin.left + "," + scatterMargin.top + ")");
-
-    d3.tsv("app/data/scatterData.tsv", function(error, data) {
-        data.forEach(function(d) {
-            d.sepalLength = +d.sepalLength;
-            d.sepalWidth = +d.sepalWidth;
-        });
-
-        scatterX.domain(d3.extent(data, function(d) { return d.sepalWidth; })).nice();
-        scatterY.domain(d3.extent(data, function(d) { return d.sepalLength; })).nice();
-
-        scatterSvg.append("g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(0," + scatterHeight + ")")
-            .call(scatterXAxis)
-            .append("text")
-            .attr("class", "label")
-            .attr("x", scatterWidth)
-            .attr("y", -6)
-            .style("text-anchor", "end")
-            .text("Sepal Width (cm)");
-
-        scatterSvg.append("g")
-            .attr("class", "y axis")
-            .call(scatterYAxis)
-            .append("text")
-            .attr("class", "label")
-            .attr("transform", "rotate(-90)")
-            .attr("y", 6)
-            .attr("dy", ".71em")
-            .style("text-anchor", "end")
-            .text("Sepal Length (cm)")
-
-        scatterSvg.selectAll(".dot")
-            .data(data)
-            .enter().append("circle")
-            .attr("class", "dot")
-            .attr("r", 3.5)
-            .attr("cx", function(d) { return scatterX(d.sepalWidth); })
-            .attr("cy", function(d) { return scatterY(d.sepalLength); })
-            .style("fill", function(d) { return scatterColor(d.species); });
-
-        var scatterLegend = scatterSvg.selectAll(".legend")
-            .data(scatterColor.domain())
-            .enter().append("g")
-            .attr("class", "legend")
-            .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-        scatterLegend.append("rect")
-            .attr("x", scatterWidth - 18)
-            .attr("width", 18)
-            .attr("height", 18)
-            .style("fill", scatterColor);
-
-        scatterLegend.append("text")
-            .attr("x", scatterWidth - 24)
-            .attr("y", 9)
-            .attr("dy", ".35em")
-            .style("text-anchor", "end")
-            .text(function(d) { return d; });
-
-    });
+//// Various accessors that specify the four dimensions of data to visualize.
+//    function x(d) { return d.income; }
+//    function y(d) { return d.lifeExpectancy; }
+//    function radius(d) { return d.population; }
+//    function color(d) { return d.region; }
+//    function key(d) { return d.name; }
+//
+//// Chart dimensions.
+//    var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 39.5},
+//        width = 960 - margin.right,
+//        height = 300;//500 - margin.top - margin.bottom;
+//
+//// Various scales. These domains make assumptions of data, naturally.
+//    var xScale = d3.scale.log().domain([300, 1e5]).range([0, width]),
+//        yScale = d3.scale.linear().domain([10, 85]).range([height, 0]),
+//        radiusScale = d3.scale.sqrt().domain([0, 5e8]).range([0, 40]),
+//        colorScale = d3.scale.category10();
+//
+//// The x & y axes.
+//    var xAxis = d3.svg.axis().orient("bottom").scale(xScale).ticks(12, d3.format(",d")),
+//        yAxis = d3.svg.axis().scale(yScale).orient("left");
+//
+//// Create the SVG container and set the origin.
+//    var svg = d3.select("#chart").append("svg")
+//        .attr("width", width + margin.left + margin.right)
+//        .attr("height", height + margin.top + margin.bottom)
+//        .append("g")
+//        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+//
+//// Add the x-axis.
+//    svg.append("g")
+//        .attr("class", "x axis")
+//        .attr("transform", "translate(0," + height + ")")
+//        .call(xAxis);
+//
+//// Add the y-axis.
+//    svg.append("g")
+//        .attr("class", "y axis")
+//        .call(yAxis);
+//
+//// Add an x-axis label.
+//    svg.append("text")
+//        .attr("class", "x label")
+//        .attr("text-anchor", "end")
+//        .attr("x", width)
+//        .attr("y", height - 6)
+//        .text("인플레를 감안한 1인당 소득 (달러)");
+//
+//// Add a y-axis label.
+//    svg.append("text")
+//        .attr("class", "y label")
+//        .attr("text-anchor", "end")
+//        .attr("y", 6)
+//        .attr("dy", ".75em")
+//        .attr("transform", "rotate(-90)")
+//        .text("수명 (년)");
+//
+//// Add the year label; the value is set on transition.
+//    var label = svg.append("text")
+//        .attr("class", "year label")
+//        .attr("text-anchor", "end")
+//        .attr("y", height - 24)
+//        .attr("x", width)
+//        .text(1800);
+//
+//// Load the data.
+//    d3.json("app/data/nations.json", function(nations) {
+//
+//        // A bisector since many nation's data is sparsely-defined.
+//        var bisect = d3.bisector(function(d) { return d[0]; });
+//
+//        // Add a dot per nation. Initialize the data at 1800, and set the colors.
+//        var dot = svg.append("g")
+//            .attr("class", "dots")
+//            .selectAll(".dot")
+//            .data(interpolateData(1800))
+//            .enter().append("circle")
+//            .attr("class", "dot")
+//            .style("fill", function(d) { return colorScale(color(d)); })
+//            .call(position)
+//            .sort(order);
+//
+//        // Add a title.
+//        dot.append("title")
+//            .text(function(d) { return d.name; });
+//
+//        // Add an overlay for the year label.
+//        var box = label.node().getBBox();
+//
+//        var overlay = svg.append("rect")
+//            .attr("class", "overlay")
+//            .attr("x", box.x)
+//            .attr("y", box.y)
+//            .attr("width", box.width)
+//            .attr("height", box.height)
+//            .on("mouseover", enableInteraction);
+//
+//        // Start a transition that interpolates the data based on year.
+//        svg.transition()
+//            .duration(30000)
+//            .ease("linear")
+//            .tween("year", tweenYear)
+//            .each("end", enableInteraction);
+//
+//        // Positions the dots based on data.
+//        function position(dot) {
+//            dot .attr("cx", function(d) { return xScale(x(d)); })
+//                .attr("cy", function(d) { return yScale(y(d)); })
+//                .attr("r", function(d) { return radiusScale(radius(d)); });
+//        }
+//
+//        // Defines a sort order so that the smallest dots are drawn on top.
+//        function order(a, b) {
+//            return radius(b) - radius(a);
+//        }
+//
+//        // After the transition finishes, you can mouseover to change the year.
+//        function enableInteraction() {
+//            var yearScale = d3.scale.linear()
+//                .domain([1800, 2009])
+//                .range([box.x + 10, box.x + box.width - 10])
+//                .clamp(true);
+//
+//            // Cancel the current transition, if any.
+//            svg.transition().duration(0);
+//
+//            overlay
+//                .on("mouseover", mouseover)
+//                .on("mouseout", mouseout)
+//                .on("mousemove", mousemove)
+//                .on("touchmove", mousemove);
+//
+//            function mouseover() {
+//                label.classed("active", true);
+//            }
+//
+//            function mouseout() {
+//                label.classed("active", false);
+//            }
+//
+//            function mousemove() {
+//                displayYear(yearScale.invert(d3.mouse(this)[0]));
+//            }
+//        }
+//
+//        // Tweens the entire chart by first tweening the year, and then the data.
+//        // For the interpolated data, the dots and label are redrawn.
+//        function tweenYear() {
+//            var year = d3.interpolateNumber(1800, 2009);
+//            return function(t) { displayYear(year(t)); };
+//        }
+//
+//        // Updates the display to show the specified year.
+//        function displayYear(year) {
+//            dot.data(interpolateData(year), key).call(position).sort(order);
+//            label.text(Math.round(year));
+//        }
+//
+//        // Interpolates the dataset for the given (fractional) year.
+//        function interpolateData(year) {
+//            return nations.map(function(d) {
+//                return {
+//                    name: d.name,
+//                    region: d.region,
+//                    income: interpolateValues(d.income, year),
+//                    population: interpolateValues(d.population, year),
+//                    lifeExpectancy: interpolateValues(d.lifeExpectancy, year)
+//                };
+//            });
+//        }
+//
+//        // Finds (and possibly interpolates) the value for the specified year.
+//        function interpolateValues(values, year) {
+//            var i = bisect.left(values, year, 0, values.length - 1),
+//                a = values[i];
+//            if (i > 0) {
+//                var b = values[i - 1],
+//                    t = (year - a[0]) / (b[0] - a[0]);
+//                return a[1] * (1 - t) + b[1] * t;
+//            }
+//            return a[1];
+//        }
+//    });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//    // Scatter
+//
+//    var scatterMargin = {top: 20, right: 20, bottom: 30, left: 40},
+//        scatterWidth = 960 - scatterMargin.left - scatterMargin.right,
+//        scatterHeight = 350 - scatterMargin.top - scatterMargin.bottom;
+//
+//    var scatterX = d3.scale.linear()
+//        .range([0, scatterWidth]);
+//
+//    var scatterY = d3.scale.linear()
+//        .range([scatterHeight, 0]);
+//
+//    var scatterColor = d3.scale.category10();
+//
+//    var scatterXAxis = d3.svg.axis()
+//        .scale(scatterX)
+//        .orient("bottom");
+//
+//    var scatterYAxis = d3.svg.axis()
+//        .scale(scatterY)
+//        .orient("left");
+//
+//    var scatterSvg = d3.select("scatter").append("svg")
+//        .attr("width", scatterWidth + scatterMargin.left + scatterMargin.right)
+//        .attr("height", scatterHeight + scatterMargin.top + scatterMargin.bottom)
+//        .append("g")
+//        .attr("transform", "translate(" + scatterMargin.left + "," + scatterMargin.top + ")");
+//
+//    d3.tsv("app/data/scatterData.tsv", function(error, data) {
+//        data.forEach(function(d) {
+//            d.sepalLength = +d.sepalLength;
+//            d.sepalWidth = +d.sepalWidth;
+//        });
+//
+//        scatterX.domain(d3.extent(data, function(d) { return d.sepalWidth; })).nice();
+//        scatterY.domain(d3.extent(data, function(d) { return d.sepalLength; })).nice();
+//
+//        scatterSvg.append("g")
+//            .attr("class", "x axis")
+//            .attr("transform", "translate(0," + scatterHeight + ")")
+//            .call(scatterXAxis)
+//            .append("text")
+//            .attr("class", "label")
+//            .attr("x", scatterWidth)
+//            .attr("y", -6)
+//            .style("text-anchor", "end")
+//            .text("Sepal Width (cm)");
+//
+//        scatterSvg.append("g")
+//            .attr("class", "y axis")
+//            .call(scatterYAxis)
+//            .append("text")
+//            .attr("class", "label")
+//            .attr("transform", "rotate(-90)")
+//            .attr("y", 6)
+//            .attr("dy", ".71em")
+//            .style("text-anchor", "end")
+//            .text("Sepal Length (cm)")
+//
+//        scatterSvg.selectAll(".dot")
+//            .data(data)
+//            .enter().append("circle")
+//            .attr("class", "dot")
+//            .attr("r", 3.5)
+//            .attr("cx", function(d) { return scatterX(d.sepalWidth); })
+//            .attr("cy", function(d) { return scatterY(d.sepalLength); })
+//            .style("fill", function(d) { return scatterColor(d.species); });
+//
+//        var scatterLegend = scatterSvg.selectAll(".legend")
+//            .data(scatterColor.domain())
+//            .enter().append("g")
+//            .attr("class", "legend")
+//            .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+//
+//        scatterLegend.append("rect")
+//            .attr("x", scatterWidth - 18)
+//            .attr("width", 18)
+//            .attr("height", 18)
+//            .style("fill", scatterColor);
+//
+//        scatterLegend.append("text")
+//            .attr("x", scatterWidth - 24)
+//            .attr("y", 9)
+//            .attr("dy", ".35em")
+//            .style("text-anchor", "end")
+//            .text(function(d) { return d; });
+//
+//    });
 
 
 
@@ -378,50 +399,119 @@ AppListCtrl.$inject = ['$scope','$http','$resource','App', 'Min'];
 
 
 function AppDetailCtrl($scope, $routeParams, App, Min) {
+//    Min.get_count_gender({app : $routeParams.appId}, function(d){
+//        var rate = d.male/(d.male+ d.female) * 100
+//        $scope.bar1 = [{"name":"남성("+Math.floor(rate)+"%)", "score": rate},
+//                       {"name":"여성("+Math.floor(100-rate)+"%)", "score": (100 - rate)}];
+//
+//    });
+
     Min.get_count_gender({app : $routeParams.appId}, function(d){
         var rate = d.male/(d.male+ d.female) * 100
         $scope.bar1 = [{"name":"남성("+Math.floor(rate)+"%)", "score": rate},
-                       {"name":"여성("+Math.floor(100-rate)+"%)", "score": (100 - rate)}];
+            {"name":"여성("+Math.floor(100-rate)+"%)", "score": (100 - rate)}];
 
     });
+
     $scope.id = $routeParams.appId;
 
+//    $scope.app = App.get({id: $routeParams.appId}, function(app) {
+//        $scope.mainImageUrl = app.img;
+//
+//
+////        var temp = app['stat'];
+////        changed = temp.replace("'", "\"");
+////        d = json.load(changed);
+////        alert(d);
+//
+//
+////        var copy = JSON.parser(JSON.stringify(temp));
+////        alert(copy);
+////        alert(copy['gender']);
+//        //d_ = eval(temp);
+////        var obj = eval('(' +
+////            temp + ')');
+//      //  alert(temp.ToDictionary())
+////        $scope.male_ = obj.gender;
+//            var age10 = 80
+//            var age20 = 100
+//            var age30 = 200
+//            var resultsA = {
+//                Sex: {
+//                    _type: "terms",
+//                    terms: [{
+//                        term: "10대",
+//                        count: age10
+//                    }, {
+//                        term: "20대",
+//                        count: age20
+//                    }, {
+//                        term: "30대",
+//                        count: age30
+//                    }]
+//                }
+//            };
+//            $scope.results = resultsA;
+//    });
+
     $scope.app = App.get({id: $routeParams.appId}, function(app) {
+
         $scope.mainImageUrl = app.img;
-//        var temp = app['stat'];
-//        changed = temp.replace("'", "\"");
-//        d = json.load(changed);
-//        alert(d);
+        $scope.id = $routeParams.appId;
+        $scope.cluster = Min.wow_cluster({id : $routeParams.appId}, function(cluster){
+            var name_ = app.name;
+//            $scope.app_ = App.auto_comp({name: name_});
+//            var id0 = app_.id;
+//            id0 = Number(id0);
+//            console.log(cluster[0]);
+            $scope.whatthe = cluster
 
 
-//        var copy = JSON.parser(JSON.stringify(temp));
-//        alert(copy);
-//        alert(copy['gender']);
-        //d_ = eval(temp);
-//        var obj = eval('(' +
-//            temp + ')');
-      //  alert(temp.ToDictionary())
-//        $scope.male_ = obj.gender;
-            var age10 = 80
-            var age20 = 100
-            var age30 = 200
+            var list = cluster;
+            list = list.sort( function(a, b) {
+                return a.value - b.value;
+            });
+
+            $scope.ctest = list;
+            $scope.others0 = App.get({id: cluster[1].id});
+            $scope.others1 = App.get({id: cluster[2].id});
+            $scope.others2 = App.get({id: cluster[3].id});
+            $scope.others3 = App.get({id: cluster[4].id});
+            $scope.others4 = App.get({id: cluster[5].id});
+
+        });
+
+        $scope.ages = Min.get_count_age({app : $routeParams.appId}, function(ages){
+            $scope.testage = ages
+            var tot = ages.one + ages.two + ages.three + ages.four
+            var one = ages.one
+            var two = ages.two
+            var three = ages.three
+            var four = ages.four
+
             var resultsA = {
                 Sex: {
                     _type: "terms",
                     terms: [{
                         term: "10대",
-                        count: age10
+                        count: one
                     }, {
                         term: "20대",
-                        count: age20
+                        count: two
                     }, {
                         term: "30대",
-                        count: age30
+                        count: three
+                    }, {
+                        term: "40대",
+                        count: four
                     }]
                 }
             };
             $scope.results = resultsA;
+        });
     });
+
+
 
     $scope.setImage = function(imageUrl) {
         $scope.mainImageUrl = imageUrl;
@@ -445,6 +535,34 @@ function DetailCtrl($scope, $routeParams, App, Min) {
     $scope.weekDay_new = Min.weekDay_new({id_: $routeParams.appId})
 
     $scope.id = $routeParams.appId
+
+    var appName = 'nan';
+    $scope.app = App.get({id: $routeParams.appId}, function(app) {
+
+        $scope.appId = $routeParams.appId;
+        appName = app.name;
+        $scope.appName = appName;
+
+//        $scope.label_temp = Min.get_label_temp({id_: $scope.appId}, function(label) {
+
+//        $scope.label_temp = label;
+//        });
+
+    });
+
+    Min.process({id_: $routeParams.appId}, function(proce){
+        $scope.pro = proce
+    });
+
+    Min.process2({id_: $routeParams.appId}, function(dataa){
+        $scope.pro2 = dataa
+    });
+
+    Min.process3({id_: $routeParams.appId}, function(dataa){
+        $scope.pro3 = dataa
+    });
+
+    $scope.id = $routeParams.appId
     var age10 = 300
     var age20 = 100
     var age30 = 200
@@ -465,8 +583,8 @@ function DetailCtrl($scope, $routeParams, App, Min) {
     };
     $scope.resultsa = resultsA;
 
-    var temp = 50;
-    var date = 1341100800000; // jul 08
+//    var temp = 50;
+//    var date = 1341100800000; // jul 08
 //    Min.date_app({id_:$routeParams.appId}, function(weekday){
 //        $scope.weekday = weekday
 //        var resultsB = {

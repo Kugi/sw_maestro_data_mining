@@ -1,0 +1,44 @@
+<html>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <div class="container-fluid">
+        <d3-bars on-click="d3OnClick(item)" data="bar1" label="name" style="height: 100"></d3-bars>
+
+        <div class="row-fluid">
+            <div class="span2">
+                !@#!@#!@#!
+
+                <p>Total number of apps: {{apps_simple.length}}</p>
+
+                <!--<fs-area bind="results.facets.date" on-click="filterByDate" />-->
+                <p>
+                    Search: <input ng-model="query" class="search-query" ng-change="autocom()">
+                    Sort by:
+                    <select ng-model="orderProp">
+                        <option value="name">이름 순 (name)</option>
+                        <option value="score">높은 점수 순 (score)</option>
+                        <option value="-score">낮은 점수 순 (-score)</option>
+                    </select>
+                </p>
+
+            </div>
+            <div class="span10">
+                <ul class="applist">
+
+                    <li ng-repeat="app in apps| filter:query | orderBy:orderProp" class="thumbnail2">
+                    <!--<li ng-repeat="app_simple in apps_simple | filter:query | orderBy:orderProp" class="thumbnail2">-->
+                     <a href="#/apps/{{app.id}}" class="thumb"><img ng-src="{{app.img}}"></a>
+                        <a href="#/apps/{{app.id}}">{{app.name}}</a>
+                        <div style="clear:right"></div>
+
+                        <textarea style="min-width: 500px; max-width: 1280px;height: 120px;">
+                            {{app | json}}
+                        </textarea>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <pre> {{apps_simple | json}} </pre>
+</html>
